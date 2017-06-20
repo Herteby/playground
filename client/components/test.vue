@@ -1,31 +1,48 @@
 <template>
 	<div>
 		<button @click="toggle = !toggle">{{toggle ? 'On' : 'Off'}}</button> Limit: <input type="number" v-model.number="limit" min="0" max="50">
+		<button @click="extra = !extra">{{extra ? 'Link on' : 'Link off'}}</button>
 		<div class="list">
-			<div v-for="item in stuff" :style="{background:'#' + item.color.toString(16),color:'#' + (4096 - item.color).toString(16)}" :key="item._id">{{item._id}} : #{{item.color.toString(16)}}</div>
+			<div v-for="item in stuff" :style="style(item)" :key="item._id">{{item._id}} : #{{item.color.toString(16)}}</div>
 		</div>
+		<pre>{{json}}</pre>
 	</div>
 </template>
 
 <script>
-	let query = Test.createQuery({
-		color:1
-	})
 	export default {
-		props:[],
 		data(){
 			return {
 				limit:20,
-				toggle:true
+				toggle:true,
+				extra:true
 			}
 		},
-		methods:{},
+		computed:{
+			json(){
+				return this.stuff[0] && JSON.stringify(this.stuff[0]).replace(/,|{|}/g, match => match + '\n')
+			}
+		},
+		methods:{
+			style(item){
+				return {
+					background:'#' + item.color.toString(16),color:'#' + (4096 - item.color).toString(16),
+					borderRadius:item.extra && item.extra.corners == 'rounded' ? '50px' : '0'
+				}
+			}
+		},
 		grapher:{
-			stuff2(){
-				let limit = this.limit
+			stuff(){
 				return {
 					collection:Test,
-					query:{color:1, $options:{limit:limit}}
+					query:{
+						_id:1,
+						color:1,
+						extra:this.extra && {
+							corners:1
+						},
+						$options:{limit:this.limit}
+					}
 				}
 			}
 		},
@@ -36,7 +53,8 @@
 				},
 				update(toggle){
 					console.log('update')
-					return toggle && this.$grapher.stuff2
+					console.log(this.$grapher.stuff.fetch())
+					return toggle && this.$grapher.stuff.fetch()
 				}
 			}
 		}
