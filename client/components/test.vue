@@ -53,8 +53,7 @@
 				},
 				update(toggle){
 					console.log('update')
-					console.log(this.$grapher.stuff.fetch())
-					return toggle && this.$grapher.stuff.fetch()
+					return toggle && this.$grapher.stuff
 				}
 			}
 		}
