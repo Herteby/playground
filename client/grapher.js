@@ -17,8 +17,9 @@ Vue.mixin({
 					let query = this._grapher[name]
 					query.body = data.query
 					if(data.subscribe !== false){
-						query.unsubscribe()
+						let subscription = _.clone(query.subscriptionHandle)
 						query.subscribe()
+						subscription && subscription.stop()						
 					}
 					if(computation){
 						this.$stopHandle(computation)
