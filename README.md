@@ -1,2 +1,1 @@
-# playground
-Meteor + Grapher + Vue
+# Meteor + Grapher + Vue

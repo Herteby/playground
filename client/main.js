@@ -13,7 +13,7 @@ new Vue({
 	el:'title',
 	meteor:{
 		title(){
-			return 'Meteor + Vue + Grapher = ' + ((Test.findOne() || {}).color || '')
+			return 'Meteor + Grapher + Vue = ' + ((Test.findOne() || {}).color || '')
 		}
 	},
 	render(h){
