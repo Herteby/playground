@@ -1,0 +1,1426 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ld",
+				"ld.chunk()\t _ Array"
+			],
+			[
+				"cld",
+				"cld.compact()\t _ Array"
+			],
+			[
+				"sub",
+				"subscribe\t(dictionary.js)"
+			],
+			[
+				"F",
+				"Facebook"
+			],
+			[
+				"app",
+				"appendChild〔function〕"
+			],
+			[
+				"round",
+				"Math_round\t( x: number ): number Math"
+			],
+			[
+				"Math",
+				"Math_round\t( x: number ): number Math"
+			],
+			[
+				"S",
+				"String\t( value: any ): String String"
+			],
+			[
+				"translate",
+				"translation〔variable〕"
+			],
+			[
+				"a",
+				"appendChild〔function〕"
+			],
+			[
+				"Dictionary",
+				"DictionaryCache"
+			],
+			[
+				"up",
+				"upsert (fn) [C]"
+			],
+			[
+				"Rea",
+				"ReactiveVar    (fn) [C]"
+			],
+			[
+				"confirm",
+				"confirm\t( message?: DOMString ): boolean Window"
+			],
+			[
+				"wor",
+				"word-wrap\tstyl"
+			],
+			[
+				"paddin",
+				"padding-right\tstyl"
+			],
+			[
+				"text",
+				"text-transform\tstyl"
+			],
+			[
+				"get",
+				"getRouteName"
+			],
+			[
+				"flex",
+				"flex-direction\tstyl"
+			],
+			[
+				"g",
+				"getRouteName"
+			],
+			[
+				"client",
+				"clientaddress"
+			],
+			[
+				"launc",
+				"launchScreens"
+			],
+			[
+				"animation",
+				"animation-delay"
+			],
+			[
+				"animation-",
+				"animation-iteration-count"
+			],
+			[
+				"Date",
+				"Date〔class〕"
+			],
+			[
+				"day",
+				"dayOrId"
+			],
+			[
+				"Push",
+				"PushNotification〔variable〕"
+			],
+			[
+				"border-top",
+				"border-top-right-radius"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"pre",
+				"pre-wrap"
+			],
+			[
+				"ju",
+				"justify-content"
+			],
+			[
+				"right",
+				"rightSidebar"
+			],
+			[
+				"atte",
+				"attemptModal"
+			],
+			[
+				"class",
+				"cellClass"
+			],
+			[
+				"animat",
+				"animation-name"
+			],
+			[
+				"upl",
+				"uploadedAt"
+			],
+			[
+				"anim",
+				"animation-timing-function"
+			],
+			[
+				"vertica",
+				"vertical-align"
+			],
+			[
+				"animta",
+				"animation-iteration-count"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"ani",
+				"animation-iteration-count"
+			],
+			[
+				"c",
+				"Collection"
+			],
+			[
+				"border",
+				"border-bottom-left-radius"
+			],
+			[
+				"backgro",
+				"background-size"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"dra",
+				"dragTodo"
+			],
+			[
+				"vert",
+				"vertical-align"
+			],
+			[
+				"workorderlin",
+				"workorderlinelimit"
+			],
+			[
+				"work",
+				"Workorderlines"
+			],
+			[
+				"anima",
+				"animation-name"
+			],
+			[
+				"trans",
+				"transition-timing-function"
+			],
+			[
+				"tran",
+				"transition-timing-function"
+			],
+			[
+				"mo",
+				"mouseenter\t.mouseenter()"
+			],
+			[
+				"web",
+				"webkit-appearance"
+			],
+			[
+				"workorder",
+				"workorders"
+			],
+			[
+				"pointer",
+				"pointer-events"
+			],
+			[
+				"initia",
+				"initialize_MarkerWithLabel"
+			],
+			[
+				"flex-",
+				"flex-grow"
+			],
+			[
+				"overf",
+				"overflow-x"
+			],
+			[
+				"lin",
+				"line-through"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"border-botto",
+				"border-bottom-right-radius"
+			],
+			[
+				"first",
+				"first-of-type"
+			],
+			[
+				"user",
+				"user-select"
+			],
+			[
+				"border-bottom",
+				"border-bottom-left-radius"
+			],
+			[
+				"la",
+				"latLng"
+			],
+			[
+				"modal",
+				"modalBackground"
+			],
+			[
+				"poinr",
+				"pointer-events"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"ca",
+				"capitalizeFirstLetter"
+			],
+			[
+				"last-",
+				"last-of-type"
+			],
+			[
+				"webkit",
+				"webkit-scrollbar"
+			],
+			[
+				"bord",
+				"border-bottom-left-radius"
+			],
+			[
+				"border-",
+				"border-bottom-right-radius"
+			],
+			[
+				"poin",
+				"pointer-events"
+			],
+			[
+				"border-bott",
+				"border-bottom-right-radius"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"po",
+				"pointer-events"
+			],
+			[
+				"border-bo",
+				"border-bottom-right-radius"
+			],
+			[
+				"last",
+				"last-of-type"
+			],
+			[
+				"load",
+				"loadmore"
+			],
+			[
+				"ease",
+				"ease-in-out"
+			],
+			[
+				"obser",
+				"observeChanges\tMeteor: cursor.observeChanges(callbacks)"
+			],
+			[
+				"Tracker",
+				"Tracker.autorun\tMeteor: Tracker.autorun(runFunc)"
+			],
+			[
+				"bq",
+				"bqgreen2"
+			],
+			[
+				"bqgree",
+				"bqgreen"
+			],
+			[
+				"lgrey",
+				"lgrey4"
+			],
+			[
+				"lg",
+				"lgrey1"
+			],
+			[
+				"n",
+				"nowrap"
+			],
+			[
+				"true",
+				"trueEmployee"
+			],
+			[
+				"bqgreen",
+				"bqgreen3"
+			],
+			[
+				"border-lef",
+				"border-bottom-left-radius"
+			],
+			[
+				"border-left",
+				"border-top-left-radius"
+			],
+			[
+				"border-right",
+				"border-bottom-right-radius"
+			],
+			[
+				"dgrey",
+				"dgrey2"
+			],
+			[
+				"bor",
+				"border-top-right-radius"
+			],
+			[
+				"border-t",
+				"border-top-left-radius"
+			],
+			[
+				"border-radius",
+				"border-top-right-radius"
+			],
+			[
+				"total",
+				"totalcostmax   (num)  [E]"
+			],
+			[
+				"bal",
+				"balconycost (num)  [E]"
+			],
+			[
+				"fonster",
+				"fonsterkarmarcost (num)  [E]"
+			],
+			[
+				"fons",
+				"fonsterkarmarcost (num)  [E]"
+			],
+			[
+				"clea",
+				"cleaningcostmax     (num)  [E]"
+			],
+			[
+				"cleaning",
+				"cleaningcostmin     (obj)  [E]"
+			],
+			[
+				"border-radi",
+				"border-bottom-right-radius"
+			],
+			[
+				"border-c",
+				"border-collapse"
+			],
+			[
+				"cleaningcost",
+				"cleaningcostmax     (num)  [E]"
+			],
+			[
+				"Work",
+				"WorkorderLines"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "client/style.styl",
+			"settings":
+			{
+				"buffer_size": 368,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/main.js",
+			"settings":
+			{
+				"buffer_size": 459,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/main.js",
+			"settings":
+			{
+				"buffer_size": 35,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 25,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 357.0,
+		"last_filter": "git pus",
+		"selected_items":
+		[
+			[
+				"git pus",
+				"git: push"
+			],
+			[
+				"commit",
+				"git: commit including unstaged files"
+			],
+			[
+				"git file",
+				"git: log current file"
+			],
+			[
+				"git",
+				"git: log"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"commi",
+				"git: commit including unstaged files"
+			],
+			[
+				"sta",
+				"git: status"
+			],
+			[
+				"box",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"DI",
+				"Package Control: Disable Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"bo",
+				"Boxy Theme: Preferences"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"mat",
+				"Material Theme: Configuration"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remove package",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 585.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/simon/Desktop/testing",
+		"/home/simon/Desktop/testing/client",
+		"/home/simon/Desktop/testing/client/components",
+		"/home/simon/Desktop/testing/node_modules",
+		"/home/simon/Desktop/testing/server"
+	],
+	"file_history":
+	[
+		"/home/simon/Desktop/testing/server/main.js",
+		"/home/simon/Desktop/Keymaster/lib/_first/settings.js",
+		"/home/simon/.config/sublime-text-3/Packages/User/SuperMonokai.tmTheme",
+		"/home/simon/Desktop/Keymaster/client/reactiveTable.js",
+		"/home/simon/Desktop/Keymaster/client/handlebars.js",
+		"/home/simon/Desktop/Keymaster/lib/_first/shared.js",
+		"/usr/bin/syncthing",
+		"/home/simon/Desktop/Projects/buildserver.sh",
+		"/home/simon/Desktop/Keymaster/client/functions.js",
+		"/home/simon/Desktop/Keymaster/client/main.js",
+		"/home/simon/Desktop/Keymaster/client/push.js",
+		"/home/simon/Desktop/Keymaster/client/translate.js",
+		"/home/simon/Desktop/Keymaster/client/ztinymce.js",
+		"/home/simon/Desktop/Keymaster/client/templates/GPS.js",
+		"/home/simon/Desktop/Keymaster/client/templates/adminEditItem.js",
+		"/home/simon/Desktop/Keymaster/client/templates/adminItems.js",
+		"/home/simon/Desktop/Keymaster/client/templates/categories.js",
+		"/home/simon/Desktop/Keymaster/client/templates/changePassword.js",
+		"/home/simon/Desktop/Keymaster/client/templates/chat.js",
+		"/home/simon/Desktop/Keymaster/client/templates/checkOut.js",
+		"/home/simon/Desktop/Keymaster/client/templates/checkin.js",
+		"/home/simon/Desktop/Keymaster/client/templates/checkinLog.js",
+		"/home/simon/Desktop/Keymaster/client/templates/dailyKeys.js",
+		"/home/simon/Desktop/Keymaster/client/templates/dictionary.js",
+		"/home/simon/Desktop/Keymaster/client/templates/documents.js",
+		"/home/simon/Desktop/Keymaster/client/templates/editFaq.js",
+		"/home/simon/Desktop/Keymaster/client/templates/feedback.js",
+		"/home/simon/Desktop/Keymaster/client/templates/itemInfo.js",
+		"/home/simon/Desktop/Keymaster/client/templates/log.js",
+		"/home/simon/Desktop/Keymaster/client/templates/login.js",
+		"/home/simon/Desktop/Keymaster/client/templates/missionMap.js",
+		"/home/simon/Desktop/Keymaster/client/templates/myItems.js",
+		"/home/simon/Desktop/Keymaster/client/templates/quiz.js",
+		"/home/simon/Desktop/Keymaster/client/templates/quizAdmin.js",
+		"/home/simon/Desktop/Keymaster/client/templates/registerInspection.js",
+		"/home/simon/Desktop/Keymaster/client/templates/requests.js",
+		"/home/simon/Desktop/Keymaster/client/templates/returnItem.js",
+		"/home/simon/Desktop/Keymaster/client/templates/reviews.js",
+		"/home/simon/Desktop/Keymaster/client/templates/roles.js",
+		"/home/simon/Desktop/Keymaster/client/templates/serverlog.js",
+		"/home/simon/Desktop/Keymaster/client/templates/settings.js",
+		"/home/simon/Desktop/Keymaster/client/templates/terms.js",
+		"/home/simon/Desktop/Keymaster/client/templates/todos.js",
+		"/home/simon/Desktop/Keymaster/client/templates/userInfo.js",
+		"/home/simon/Desktop/Keymaster/client/templates/users.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/cancelMission.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/customerContacts.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/customerInfo.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/customerInvoices.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/faq.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/invoicePopup.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/missionPopup.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/news.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/calculator.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/chart.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/components.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/contextMenu.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/editor.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/fileSidebar.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/files.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/grouper.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/header.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/language.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/layout.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/modal.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/select.js",
+		"/home/simon/Desktop/Keymaster/lib/collections.js",
+		"/home/simon/Desktop/Keymaster/lib/methods.js",
+		"/home/simon/Desktop/Keymaster/lib/router.js",
+		"/home/simon/Desktop/Keymaster/lib/_first/functions.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/documents.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/files.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/items.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/missions.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/quiz.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/requests.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/reviews.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/todos.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/users.js",
+		"/home/simon/Desktop/Keymaster/server/checkMissions.js",
+		"/home/simon/Desktop/Keymaster/server/checkNeededKeys.js",
+		"/home/simon/Desktop/Keymaster/server/cronJobs.js",
+		"/home/simon/Desktop/Keymaster/server/geocode.js",
+		"/home/simon/Desktop/Keymaster/server/messages.js",
+		"/home/simon/Desktop/Keymaster/server/methods.js",
+		"/home/simon/Desktop/Keymaster/server/publications.js",
+		"/home/simon/Desktop/Keymaster/server/startup.js",
+		"/home/simon/Desktop/Keymaster/server/stuff.js",
+		"/home/simon/Desktop/Keymaster/server/timewave.js",
+		"/home/simon/Desktop/Keymaster/server/translate.js",
+		"/home/simon/Desktop/Keymaster/server/lib/score.js",
+		"/home/simon/Desktop/Keymaster/client/style.styl",
+		"/home/simon/Desktop/Keymaster/server/zzz.js",
+		"/home/simon/Desktop/Keymaster/client/templates/editFaq.html",
+		"/home/simon/Desktop/Keymaster/server/push.js",
+		"/home/simon/Desktop/Keymaster/client/templates/users.html",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/sidebar.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/newVersion.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/lightbox.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/choice.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/customerMissions.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/contactPage.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/customerInfo.html",
+		"/home/simon/Desktop/Keymaster/client/templates/reportDisorder.js",
+		"/home/simon/Desktop/Keymaster/client/templates/quizResults.js",
+		"/home/simon/Desktop/Keymaster/client/templates/feedbackView.js",
+		"/home/simon/Desktop/Keymaster/client/templates/errors.js",
+		"/home/simon/Desktop/Keymaster/client/templates/display.js",
+		"/home/simon/Desktop/Keymaster/mobile-config.js",
+		"/home/simon/Desktop/Keymaster/server/kadira.js",
+		"/home/simon/Desktop/Keymaster/lib/_first/contextMenu.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/week.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/week.html",
+		"/home/simon/Desktop/Keymaster/client/templates/reviews.html",
+		"/home/simon/Desktop/Keymaster/server/lib/environment.js",
+		"/home/simon/Desktop/Keymaster/client/templates/login.html",
+		"/home/simon/.vscode/extensions/super-monokai/package.json",
+		"/home/simon/.vscode/extensions/joshpeng.theme-onedark-sublime-0.3.6/package.json",
+		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/.vsixmanifest",
+		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/LICENSE.txt",
+		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/.vscode/launch.json",
+		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/package.json",
+		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/color_palette.txt",
+		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/CHANGELOG.md",
+		"/home/simon/Desktop/Keymaster/client/presets.styl",
+		"/home/simon/.config/sublime-text-3/Packages/CodeComplice/CodeComplice.sublime-settings",
+		"/home/simon/.config/sublime-text-3/Packages/User/CodeComplice.sublime-settings",
+		"/home/simon/.config/sublime-text-3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 118.0,
+		"where_history":
+		[
+			"",
+			"*.js",
+			"",
+			"*.js",
+			"",
+			"server/",
+			"",
+			"server/",
+			"/server",
+			"",
+			"server/",
+			"/server",
+			"",
+			"-*.txt",
+			"",
+			"server/",
+			"",
+			"lib/",
+			"",
+			"lib/",
+			"server/",
+			"/server/",
+			"/server",
+			"",
+			"c",
+			"client",
+			"/client",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cancel",
+			"settingsready",
+			"setting = funct",
+			"settings = funct",
+			"settings",
+			"settingsReady",
+			"#if session",
+			"subscribe('settings",
+			".go",
+			"dl",
+			"{{>edit",
+			"{{> edit",
+			"type",
+			";",
+			"push.send",
+			"subscribe('faq",
+			"templet",
+			"var ",
+			";}",
+			"subscribe('faq",
+			"upload",
+			";\\n",
+			"tmpl",
+			"id",
+			"'schedules'",
+			"#week",
+			"schedule",
+			"30",
+			"11",
+			"arguments",
+			"#customer",
+			"Todos.update",
+			"Todos.",
+			"sharedtodos",
+			"syncedCron",
+			"Todos.remove",
+			"console",
+			"highlight",
+			"label",
+			"template name=\"files",
+			"cancel",
+			"kadira",
+			"setting('com",
+			"E6DB74",
+			"c88fe8",
+			"c88dc0",
+			"66D9EF",
+			"function",
+			"c88dc0",
+			"F92672",
+			"AE81FF",
+			"A6E22E",
+			"E6DB74",
+			"202224",
+			"faqs",
+			"created",
+			"edit",
+			"editing",
+			"getfin",
+			"observe",
+			"syncedcron.add",
+			"subscribe('files",
+			"stadalliansen",
+			"order",
+			"type",
+			": function (",
+			":function (",
+			": function(",
+			":function(",
+			"@.*",
+			".*:.*",
+			".userline",
+			"template name=\"",
+			".*:.*",
+			"rovar",
+			"rovare",
+			"extra",
+			"name=\"userline",
+			"name=userline",
+			"userline",
+			"push.send",
+			"user not found",
+			"loginwithpassword",
+			"createuser",
+			"contextmenu",
+			"pad",
+			"pathfor",
+			"print",
+			"azure",
+			"&amp;",
+			"setting(",
+			"permission",
+			"subscribe('sect",
+			"sections",
+			"section obs",
+			"wrap",
+			"unwrap",
+			"article",
+			"micro",
+			"azure",
+			"subscribe('sections",
+			"content",
+			"#documents",
+			"select",
+			"content",
+			"tempvar",
+			"State.set",
+			"tempvar",
+			"console.log('check key",
+			"get =",
+			"requests",
+			"subscribe('settings",
+			"debug",
+			"console.log(",
+			"console.log",
+			"subscribe('files",
+			"Shared =",
+			"_driver",
+			": ",
+			" =",
+			": .*=",
+			".*new Mongo.Collection",
+			"new Mongo.Collection",
+			"Mongo.Collection",
+			"Mongo.",
+			"Collection",
+			"subscribe('dict",
+			"subscribe.*elemmatch"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"let ",
+			"}",
+			"\\n",
+			"c2ea82",
+			"c88fe8",
+			"74a9ff",
+			"c88dc0",
+			"fa7255",
+			"ffcc63",
+			"b8e988",
+			"263239",
+			"(",
+			"",
+			"\\\"",
+			" ",
+			"",
+			" ",
+			"",
+			"src=\"/",
+			"\t",
+			"users",
+			"quizEdit",
+			"driver:Shared",
+			"fileSidebar",
+			"role:{$ne:'customer'}",
+			"background-image",
+			"Subheading",
+			"subheading",
+			"FlowRouter.getRouteName()",
+			"FlowRouter.current().route.name",
+			"Flow",
+			"FlowRouter",
+			"",
+			"6px",
+			"",
+			"margin-bottom: 1px;",
+			"5px",
+			"",
+			"outline",
+			"user()",
+			"\t",
+			"Colors.",
+			"\\n",
+			"','",
+			"",
+			"','",
+			"",
+			"^not ",
+			"",
+			"\"",
+			"OS-X",
+			"OS X El Capitan",
+			"",
+			"'",
+			"background lgrey4",
+			"\t",
+			"background",
+			"0px 1px 3px",
+			"\t",
+			":'mobile/icon",
+			":'icon",
+			"",
+			"\t",
+			"'",
+			",",
+			",'",
+			"\t",
+			"",
+			"\t",
+			"','",
+			"",
+			"\t",
+			"user()",
+			"attr('name'",
+			"quizEdit",
+			"layout",
+			" ",
+			"\t",
+			"bold true",
+			"",
+			")\"",
+			"\")",
+			"\"hsl",
+			"\"),",
+			"),",
+			": ",
+			"arg",
+			"222222",
+			"notes",
+			"user",
+			"h4",
+			"h3",
+			"",
+			"\t",
+			"",
+			"  ",
+			"6",
+			"",
+			"to",
+			"from",
+			"\t",
+			"radius 4px",
+			"alert",
+			"me",
+			"td",
+			"\t",
+			"ease-out",
+			"Meteor.publish",
+			"PublishSecure",
+			"\t",
+			"class=\"article\"",
+			"interval",
+			"username",
+			"nowrap",
+			"time",
+			"ally",
+			"opponent",
+			"username",
+			"Items.",
+			"stuff",
+			":'",
+			"\t",
+			"",
+			"Requests",
+			"Request",
+			"request",
+			"Request",
+			"request"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "client/style.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+								"#222222ff",
+								"#666666ff",
+								"#eeeeeeff",
+								"#ffffffff"
+							],
+							"color_helper.popup_active": false,
+							"color_helper.popup_auto": true,
+							"color_helper.preview_meta":
+							{
+								"165":
+								[
+									5248909261746909543,
+									4,
+									"hex_compressed",
+									5503848642409478621,
+									3,
+									"1497945600.1786804"
+								],
+								"225":
+								[
+									5248877622893703058,
+									4,
+									"hex_compressed",
+									5503848642409478621,
+									4,
+									"1497945600.1801026"
+								],
+								"364":
+								[
+									5248920675856955522,
+									4,
+									"hex_compressed",
+									5503848642409478621,
+									8,
+									"1497945788.8227012"
+								],
+								"81":
+								[
+									5248921651047751630,
+									4,
+									"hex_compressed",
+									5503848642409478621,
+									1,
+									"1497945600.1538982"
+								],
+								"93":
+								[
+									5248877622893703058,
+									4,
+									"hex_compressed",
+									5503848642409478621,
+									2,
+									"1497945600.1608727"
+								]
+							},
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"hsl",
+									"hex_compressed",
+									"hsla",
+									"webcolors",
+									"hex",
+									"rgb",
+									"rgba"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".styl",
+								"current_syntax": "Stylus/Stylus",
+								"enabled": true,
+								"last_updated": 1497945412.32,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"constant.other.color.rgb-value.stylus",
+									"constant.color.w3c-standard-color-name.stylus",
+									"meta.property-value.stylus"
+								],
+								"use_hex_argb": false
+							},
+							"git_savvy.file_path": "/home/simon/Desktop/testing/client/style.styl",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing",
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								459,
+								459
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "Babel/JavaScript (Babel)",
+								"enabled": false,
+								"last_updated": 1497945412.32
+							},
+							"git_savvy.file_path": "/home/simon/Desktop/testing/client/main.js",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "server/main.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 35,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "Babel/JavaScript (Babel)",
+								"enabled": false,
+								"last_updated": 1497945412.32
+							},
+							"git_savvy.file_path": "/home/simon/Desktop/testing/server/main.js",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"hsl",
+									"hex_compressed",
+									"hsla",
+									"webcolors",
+									"hex",
+									"rgb",
+									"rgba"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".md",
+								"current_syntax": "Markdown/Markdown",
+								"enabled": true,
+								"last_updated": 1497945412.32,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.declaration-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted -constant.character.entity.html",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"git_savvy.file_path": "/home/simon/Desktop/testing/README.md",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.show_commit_info":
+	{
+		"height": 130.0
+	},
+	"output.tooltips":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "",
+	"project": "testing.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/KeymasterVue/KeymasterVue.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 357.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Request"
+			]
+		],
+		"width": 374.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 256.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

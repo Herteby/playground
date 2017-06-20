@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<button @click="toggle = !toggle">Toggle</button>{{toggle}}
+		<button @click="toggle = !toggle">{{toggle ? 'On' : 'Off'}}</button> Limit: <input type="number" v-model.number="limit" min="0" max="50">
 		<div class="list">
-			<div v-for="item in stuffings" :style="{background:'#' + item.color.toString(16),color:'#' + (4096 - item.color).toString(16)}" :key="item._id">{{item._id}} : #{{item.color.toString(16)}}</div>
+			<div v-for="item in stuff" :style="{background:'#' + item.color.toString(16),color:'#' + (4096 - item.color).toString(16)}" :key="item._id">{{item._id}} : #{{item.color.toString(16)}}</div>
 		</div>
 	</div>
 </template>
@@ -15,40 +15,18 @@
 		props:[],
 		data(){
 			return {
+				limit:20,
 				toggle:true
-			}
-		},
-		beforeCreate(){
-			query.subscribe()
-			Tracker.autorun(()=>{
-				let query2 = Test.createQuery({
-					$options:{
-						sort:{_id:1}
-					},
-					color:1,
-					extra:{
-						color:1
-					}
-				})
-				query2.subscribe()
-			})
-		},
-		computed:{
-			stuffings(){
-				console.log(this.stuff)
-				return this.stuff
-			}
-		},
-		watch:{
-			stuff(){
-				console.log('stuff changed')
 			}
 		},
 		methods:{},
 		grapher:{
-			stuff:{
-				collection:Test,
-				query:{color:1}
+			stuff2(){
+				let limit = this.limit
+				return {
+					collection:Test,
+					query:{color:1, $options:{limit:limit}}
+				}
 			}
 		},
 		meteor:{
@@ -57,7 +35,8 @@
 					return this.toggle
 				},
 				update(toggle){
-					return toggle && query.fetch()	
+					console.log('update')
+					return toggle && this.$grapher.stuff2
 				}
 			}
 		}
