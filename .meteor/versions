@@ -29,7 +29,7 @@ ejson@1.0.13
 es5-shim@4.6.15
 fastclick@1.0.13
 geojson-utils@1.0.10
-herteby:grapher-vue@0.1.5
+herteby:grapher-vue@0.2.0
 hot-code-push@1.0.4
 html-tools@1.0.11
 htmljs@1.0.11

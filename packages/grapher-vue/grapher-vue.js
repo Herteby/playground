@@ -25,21 +25,26 @@ export default {
 							}
 							let query = this._grapher[name]
 							query.body = params.query
-
+							if(params.single){
+								if(!query.body.$options){
+									query.body.$options = {}
+								}
+								query.body.$options.limit = 1
+							}
 							if(params.subscribe === false){ //"Method style" fetch
 								if(query.subscriptionHandle){ //Handle switching from subscription-based
 									this.$stopHandle(computation)
 									query.unsubscribe()
 								}
 								this[name].ready = false 
-								query.fetch((err,res) => {
+								query[params.single ? 'fetchOne' : 'fetch']((err,res) => {
 									if(err){
 										console.err(err)
 									} else {
 										this[name] = {
 											ready:true,
 											readyOnce:true,
-											count:res.length,
+											count:params.single ? undefined : res.length,
 											time:new Date() - start,
 											data:res
 										}
@@ -62,11 +67,11 @@ export default {
 									if(ready && !time){
 										time = new Date() - start
 									}
-									let data = query.fetch()
+									let data = query[params.single ? 'fetchOne' : 'fetch']()
 									this[name] = Object.freeze({
 										ready:ready,
 										readyOnce:readyOnce,
-										count:data.length,
+										count:params.single ? undefined : data.length,
 										time:time,
 										data:data
 									})
