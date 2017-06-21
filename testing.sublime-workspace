@@ -4,16 +4,20 @@
 		"selected_items":
 		[
 			[
+				"subsc",
+				"subscriptionHandle"
+			],
+			[
+				"sub",
+				"subscriptionHandle"
+			],
+			[
 				"ld",
 				"ld.chunk()\t _ Array"
 			],
 			[
 				"cld",
 				"cld.compact()\t _ Array"
-			],
-			[
-				"sub",
-				"subscribe\t(dictionary.js)"
 			],
 			[
 				"F",
@@ -447,7 +451,7 @@
 			"file": "client/style.styl",
 			"settings":
 			{
-				"buffer_size": 368,
+				"buffer_size": 412,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -462,19 +466,37 @@
 			}
 		},
 		{
-			"file": "server/main.js",
+			"file": "client/grapher.js",
 			"settings":
 			{
-				"buffer_size": 35,
+				"buffer_size": 934,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".meteor/packages",
+			"settings":
+			{
+				"buffer_size": 431,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "README.md",
+			"file": "client/components/test.vue",
 			"settings":
 			{
-				"buffer_size": 25,
+				"buffer_size": 1066,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "node_modules/vue-meteor-tracker/lib/vue-plugin.js",
+			"settings":
+			{
+				"buffer_size": 8403,
 				"line_ending": "Unix"
 			}
 		}
@@ -487,9 +509,73 @@
 	"command_palette":
 	{
 		"height": 357.0,
-		"last_filter": "git pus",
+		"last_filter": "git p",
 		"selected_items":
 		[
+			[
+				"git p",
+				"git: push"
+			],
+			[
+				"gitco",
+				"git: commit including unstaged files"
+			],
+			[
+				"git stat",
+				"git: status"
+			],
+			[
+				"stat",
+				"git: status"
+			],
+			[
+				"sta",
+				"git: status"
+			],
+			[
+				"force ",
+				"git: push (force)"
+			],
+			[
+				"git mer",
+				"git: abort merge"
+			],
+			[
+				"git resol",
+				"git: restart merge for file..."
+			],
+			[
+				"git",
+				"git: merge"
+			],
+			[
+				"git pull",
+				"git: pull"
+			],
+			[
+				"git pu",
+				"git: pull"
+			],
+			[
+				"git a",
+				"git: amend previous commit"
+			],
+			[
+				"git co",
+				"git: commit including unstaged files"
+			],
+			[
+				"",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"box",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
 			[
 				"git pus",
 				"git: push"
@@ -503,24 +589,8 @@
 				"git: log current file"
 			],
 			[
-				"git",
-				"git: log"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Install Package"
-			],
-			[
 				"commi",
 				"git: commit including unstaged files"
-			],
-			[
-				"sta",
-				"git: status"
-			],
-			[
-				"box",
-				"Boxy Theme: Configuration"
 			],
 			[
 				"disa",
@@ -589,16 +659,26 @@
 	"expanded_folders":
 	[
 		"/home/simon/Desktop/testing",
+		"/home/simon/Desktop/testing/.meteor",
 		"/home/simon/Desktop/testing/client",
 		"/home/simon/Desktop/testing/client/components",
+		"/home/simon/Desktop/testing/lib",
 		"/home/simon/Desktop/testing/node_modules",
+		"/home/simon/Desktop/testing/node_modules/vue-meteor-tracker",
+		"/home/simon/Desktop/testing/node_modules/vue-meteor-tracker/lib",
 		"/home/simon/Desktop/testing/server"
 	],
 	"file_history":
 	[
+		"/home/simon/Desktop/testing/README.md",
+		"/home/simon/Desktop/testing/.meteor/packages",
+		"/home/simon/Desktop/testing/lib/collection.js",
+		"/home/simon/Desktop/testing/client/components/tree-view.vue",
+		"/home/simon/Desktop/testing/client/components/tree-view-item.vue",
+		"/home/simon/Desktop/testing/node_modules/vue-meteor-tracker/lib/vue-plugin.js",
+		"/home/simon/.config/sublime-text-3/Packages/User/SuperMonokai.tmTheme",
 		"/home/simon/Desktop/testing/server/main.js",
 		"/home/simon/Desktop/Keymaster/lib/_first/settings.js",
-		"/home/simon/.config/sublime-text-3/Packages/User/SuperMonokai.tmTheme",
 		"/home/simon/Desktop/Keymaster/client/reactiveTable.js",
 		"/home/simon/Desktop/Keymaster/client/handlebars.js",
 		"/home/simon/Desktop/Keymaster/lib/_first/shared.js",
@@ -717,17 +797,11 @@
 		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/.vsixmanifest",
 		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/LICENSE.txt",
 		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/.vscode/launch.json",
-		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/package.json",
-		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/color_palette.txt",
-		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/CHANGELOG.md",
-		"/home/simon/Desktop/Keymaster/client/presets.styl",
-		"/home/simon/.config/sublime-text-3/Packages/CodeComplice/CodeComplice.sublime-settings",
-		"/home/simon/.config/sublime-text-3/Packages/User/CodeComplice.sublime-settings",
-		"/home/simon/.config/sublime-text-3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings"
+		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/package.json"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 48.0
 	},
 	"find_in_files":
 	{
@@ -769,6 +843,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$autorun",
+			"$track",
+			"definereac",
+			"definereactive",
+			"_this.",
+			"$options",
+			"$grapher",
+			"$autorun",
+			"aut",
+			"$options.meteor",
+			"params",
 			"cancel",
 			"settingsready",
 			"setting = funct",
@@ -885,18 +970,7 @@
 			"console.log(",
 			"console.log",
 			"subscribe('files",
-			"Shared =",
-			"_driver",
-			": ",
-			" =",
-			": .*=",
-			".*new Mongo.Collection",
-			"new Mongo.Collection",
-			"Mongo.Collection",
-			"Mongo.",
-			"Collection",
-			"subscribe('dict",
-			"subscribe.*elemmatch"
+			"Shared ="
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -904,6 +978,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"_grapher",
 			"let ",
 			"}",
 			"\\n",
@@ -1030,8 +1105,7 @@
 			"Requests",
 			"Request",
 			"request",
-			"Request",
-			"request"
+			"Request"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1051,15 +1125,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 368,
+						"buffer_size": 412,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								361,
-								361
+								130,
+								130
 							]
 						],
 						"settings":
@@ -1079,67 +1153,67 @@
 							{
 								"165":
 								[
-									5248909261746909543,
+									-2131419559355885053,
 									4,
 									"hex_compressed",
-									5503848642409478621,
+									-5515027042888217439,
 									3,
-									"1497945600.1786804"
+									"1497958627.0742776"
 								],
-								"225":
+								"269":
 								[
-									5248877622893703058,
+									-2131420824828302094,
 									4,
 									"hex_compressed",
-									5503848642409478621,
+									-5515027042888217439,
 									4,
-									"1497945600.1801026"
+									"1497958627.0755692"
 								],
-								"364":
+								"408":
 								[
-									5248920675856955522,
+									-2131335509923587102,
 									4,
 									"hex_compressed",
-									5503848642409478621,
-									8,
-									"1497945788.8227012"
+									-5515027042888217439,
+									5,
+									"1497958627.0770004"
 								],
 								"81":
 								[
-									5248921651047751630,
+									-2131330996548910186,
 									4,
 									"hex_compressed",
-									5503848642409478621,
+									-5515027042888217439,
 									1,
-									"1497945600.1538982"
+									"1497958627.07019"
 								],
 								"93":
 								[
-									5248877622893703058,
+									-2131420824828302094,
 									4,
 									"hex_compressed",
-									5503848642409478621,
+									-5515027042888217439,
 									2,
-									"1497945600.1608727"
+									"1497958627.072537"
 								]
 							},
 							"color_helper.scan":
 							{
 								"allowed_colors":
 								[
-									"hsl",
 									"hex_compressed",
-									"hsla",
+									"rgba",
 									"webcolors",
-									"hex",
+									"hsl",
 									"rgb",
-									"rgba"
+									"hex",
+									"hsla"
 								],
 								"compress_hex_output": true,
 								"current_ext": ".styl",
 								"current_syntax": "Stylus/Stylus",
 								"enabled": true,
-								"last_updated": 1497945412.32,
+								"last_updated": 1497957493.14,
 								"scan_completion_scopes":
 								[
 								],
@@ -1195,7 +1269,7 @@
 								"current_ext": ".js",
 								"current_syntax": "Babel/JavaScript (Babel)",
 								"enabled": false,
-								"last_updated": 1497945412.32
+								"last_updated": 1497957493.14
 							},
 							"git_savvy.file_path": "/home/simon/Desktop/testing/client/main.js",
 							"git_savvy.repo_path": "/home/simon/Desktop/testing",
@@ -1206,24 +1280,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "server/main.js",
-					"semi_transient": true,
+					"file": "client/grapher.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 35,
+						"buffer_size": 934,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								35,
-								35
+								626,
+								626
 							]
 						],
 						"settings":
@@ -1241,9 +1315,9 @@
 								"current_ext": ".js",
 								"current_syntax": "Babel/JavaScript (Babel)",
 								"enabled": false,
-								"last_updated": 1497945412.32
+								"last_updated": 1497957493.14
 							},
-							"git_savvy.file_path": "/home/simon/Desktop/testing/server/main.js",
+							"git_savvy.file_path": "/home/simon/Desktop/testing/client/grapher.js",
 							"git_savvy.repo_path": "/home/simon/Desktop/testing",
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
 						},
@@ -1256,19 +1330,64 @@
 				},
 				{
 					"buffer": 3,
-					"file": "README.md",
+					"file": ".meteor/packages",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 25,
+						"buffer_size": 431,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								25,
-								25
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": "",
+								"current_syntax": "Text/Plain text",
+								"enabled": false,
+								"last_updated": 1497957493.14
+							},
+							"git_savvy.file_path": "/home/simon/Desktop/testing/.meteor/packages",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "client/components/test.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								472,
+								472
 							]
 						],
 						"settings":
@@ -1285,19 +1404,19 @@
 							{
 								"allowed_colors":
 								[
-									"hsl",
 									"hex_compressed",
-									"hsla",
+									"rgba",
 									"webcolors",
-									"hex",
+									"hsl",
 									"rgb",
-									"rgba"
+									"hex",
+									"hsla"
 								],
 								"compress_hex_output": true,
-								"current_ext": ".md",
-								"current_syntax": "Markdown/Markdown",
+								"current_ext": ".vue",
+								"current_syntax": "Vue Syntax Highlight/vue",
 								"enabled": true,
-								"last_updated": 1497945412.32,
+								"last_updated": 1497957493.14,
 								"scan_completion_scopes":
 								[
 								],
@@ -1311,15 +1430,69 @@
 								],
 								"use_hex_argb": false
 							},
-							"git_savvy.file_path": "/home/simon/Desktop/testing/README.md",
+							"git_savvy.file_path": "/home/simon/Desktop/testing/client/components/test.vue",
 							"git_savvy.repo_path": "/home/simon/Desktop/testing",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "node_modules/vue-meteor-tracker/lib/vue-plugin.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7202,
+								7202
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "Babel/JavaScript (Babel)",
+								"enabled": false,
+								"last_updated": 1497957493.14
+							},
+							"git_savvy.file_path": "/home/simon/Desktop/testing/node_modules/vue-meteor-tracker/lib/vue-plugin.js",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4195.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1342,11 +1515,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5078125,
 			1.0
 		],
 		"rows":
@@ -1356,6 +1536,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 267.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -1372,7 +1556,7 @@
 	"project": "testing.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 90.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -17,6 +17,7 @@
 			"warn",
 			"never"
 		],
+		"no-empty":"off",
 		"no-undef": "off",
 		"no-unused-vars": "off",
 		"no-console": "off"

@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueMeteorTracker from 'vue-meteor-tracker'
 Vue.use(VueMeteorTracker)
+import GrapherVue from 'meteor/herteby:grapher-vue'
+Vue.use(GrapherVue)
+Vue.prototype._ = _
 Vue.config.meteor.freeze = true
 import test from './components/test.vue'
 new Vue({
