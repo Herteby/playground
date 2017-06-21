@@ -451,7 +451,7 @@
 			"file": "client/style.styl",
 			"settings":
 			{
-				"buffer_size": 412,
+				"buffer_size": 539,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -460,25 +460,24 @@
 			"file": "client/main.js",
 			"settings":
 			{
-				"buffer_size": 459,
+				"buffer_size": 551,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/grapher.js",
+			"file": "packages/grapher-vue/package.js",
 			"settings":
 			{
-				"buffer_size": 934,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 314,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": ".meteor/packages",
 			"settings":
 			{
-				"buffer_size": 431,
+				"buffer_size": 451,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -487,9 +486,54 @@
 			"file": "client/components/test.vue",
 			"settings":
 			{
-				"buffer_size": 1066,
+				"buffer_size": 915,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "packages/grapher-vue/grapher-vue.js",
+			"settings":
+			{
+				"buffer_size": 2199,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n  BRANCH:  On branch `master` tracking `origin/master`.\n  ROOT:    ~/Desktop/testing\n  HEAD:    a229401 Created the grapher-vue package\n\n  UNSTAGED:\n    .meteor/versions\n    packages/grapher-vue/README.md\n    packages/grapher-vue/grapher-vue.js\n    packages/grapher-vue/package.js\n\n  STAGED:\n    .meteor/versions\n    packages/grapher-vue/LICENSE\n    packages/grapher-vue/README.md\n    packages/grapher-vue/package.js\n\n  ###################                   ###############\n  ## SELECTED FILE ##                   ## ALL FILES ##\n  ###################                   ###############\n\n  [o] open file                         [a] stage all unstaged files\n  [s] stage file                        [A] stage all unstaged and untracked files\n  [u] unstage file                      [U] unstage all staged files\n  [d] discard changes to file           [D] discard all unstaged changes\n  [h] open file on remote\n  [M] launch external merge tool for conflict\n\n  [l] diff file inline                  [f] diff all files\n  [e] diff file                         [F] diff all cached files\n\n  #############                         #############\n  ## ACTIONS ##                         ## STASHES ##\n  #############                         #############\n\n  [c] commit                            [t][a] apply stash\n  [C] commit, including unstaged        [t][p] pop stash\n  [m] amend previous commit             [t][s] show stash\n  [p] push current branch               [t][c] create stash\n                                        [t][u] create stash including untracked files\n  [i] ignore file                       [t][g] create stash of staged changes only\n  [I] ignore pattern                    [t][d] discard stash\n\n  ###########\n  ## OTHER ##\n  ###########\n\n  [r]         refresh status\n  [?]         toggle this help menu\n  [tab]       transition to next dashboard\n  [SHIFT-tab] transition to previous dashboard\n  [.]         move cursor to next file\n  [,]         move cursor to previous file\n\n-\n\n",
+			"settings":
+			{
+				"buffer_size": 1993,
+				"line_ending": "Unix",
+				"name": "STATUS: testing",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 111,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "both/collection.js",
+			"settings":
+			{
+				"buffer_size": 580,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "packages/grapher-vue/README.md",
+			"settings":
+			{
+				"buffer_size": 2251,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -509,9 +553,29 @@
 	"command_palette":
 	{
 		"height": 357.0,
-		"last_filter": "git p",
+		"last_filter": "git sta",
 		"selected_items":
 		[
+			[
+				"git sta",
+				"git: status"
+			],
+			[
+				"git pus",
+				"git: push (force)"
+			],
+			[
+				"git co",
+				"git: quick commit"
+			],
+			[
+				"git pu",
+				"git: push"
+			],
+			[
+				"git st",
+				"git: status"
+			],
 			[
 				"git p",
 				"git: push"
@@ -553,16 +617,8 @@
 				"git: pull"
 			],
 			[
-				"git pu",
-				"git: pull"
-			],
-			[
 				"git a",
 				"git: amend previous commit"
-			],
-			[
-				"git co",
-				"git: commit including unstaged files"
 			],
 			[
 				"",
@@ -575,10 +631,6 @@
 			[
 				"Package Control: ",
 				"Package Control: Remove Package"
-			],
-			[
-				"git pus",
-				"git: push"
 			],
 			[
 				"commit",
@@ -660,16 +712,22 @@
 	[
 		"/home/simon/Desktop/testing",
 		"/home/simon/Desktop/testing/.meteor",
+		"/home/simon/Desktop/testing/.meteor/local/build",
+		"/home/simon/Desktop/testing/.meteor/local/build/programs",
+		"/home/simon/Desktop/testing/both",
 		"/home/simon/Desktop/testing/client",
 		"/home/simon/Desktop/testing/client/components",
-		"/home/simon/Desktop/testing/lib",
-		"/home/simon/Desktop/testing/node_modules",
 		"/home/simon/Desktop/testing/node_modules/vue-meteor-tracker",
 		"/home/simon/Desktop/testing/node_modules/vue-meteor-tracker/lib",
-		"/home/simon/Desktop/testing/server"
+		"/home/simon/Desktop/testing/packages",
+		"/home/simon/Desktop/testing/packages/grapher-vue"
 	],
 	"file_history":
 	[
+		"/home/simon/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/home/simon/Desktop/testing/client/grapher.js",
+		"/home/simon/Desktop/testing/packages/grapher-vue/grapher-vue-tests.js",
+		"/home/simon/Desktop/testing/.eslintrc",
 		"/home/simon/Desktop/testing/README.md",
 		"/home/simon/Desktop/testing/.meteor/packages",
 		"/home/simon/Desktop/testing/lib/collection.js",
@@ -793,11 +851,7 @@
 		"/home/simon/Desktop/Keymaster/server/lib/environment.js",
 		"/home/simon/Desktop/Keymaster/client/templates/login.html",
 		"/home/simon/.vscode/extensions/super-monokai/package.json",
-		"/home/simon/.vscode/extensions/joshpeng.theme-onedark-sublime-0.3.6/package.json",
-		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/.vsixmanifest",
-		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/LICENSE.txt",
-		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/.vscode/launch.json",
-		"/home/simon/.vscode/extensions/herteby.theme-super-monokai-1.0/package.json"
+		"/home/simon/.vscode/extensions/joshpeng.theme-onedark-sublime-0.3.6/package.json"
 	],
 	"find":
 	{
@@ -843,6 +897,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\t",
+			"_",
 			"$autorun",
 			"$track",
 			"definereac",
@@ -968,9 +1024,7 @@
 			"subscribe('settings",
 			"debug",
 			"console.log(",
-			"console.log",
-			"subscribe('files",
-			"Shared ="
+			"console.log"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -978,6 +1032,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"  ",
 			"_grapher",
 			"let ",
 			"}",
@@ -1104,8 +1159,7 @@
 			"",
 			"Requests",
 			"Request",
-			"request",
-			"Request"
+			"request"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1116,7 +1170,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -1125,15 +1179,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 412,
+						"buffer_size": 539,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								130,
-								130
+								199,
+								199
 							]
 						],
 						"settings":
@@ -1144,6 +1198,7 @@
 							[
 								"#222222ff",
 								"#666666ff",
+								"#aaaaaaff",
 								"#eeeeeeff",
 								"#ffffffff"
 							],
@@ -1153,67 +1208,94 @@
 							{
 								"165":
 								[
-									-2131419559355885053,
+									-5515831826101369964,
 									4,
 									"hex_compressed",
-									-5515027042888217439,
+									-6070772727724542596,
 									3,
-									"1497958627.0742776"
+									"1498030201.1939285"
 								],
-								"269":
+								"251":
 								[
-									-2131420824828302094,
+									-5515832078960405280,
 									4,
 									"hex_compressed",
-									-5515027042888217439,
-									4,
-									"1497958627.0755692"
+									-6070772727724542596,
+									37,
+									"1498035468.3446782"
 								],
-								"408":
+								"338":
 								[
-									-2131335509923587102,
+									-5515830693396739415,
 									4,
 									"hex_compressed",
-									-5515027042888217439,
+									-6070772727724542596,
+									4,
+									"1498030201.1950624"
+								],
+								"477":
+								[
+									-5516876580496252903,
+									4,
+									"hex_compressed",
+									-6070772727724542596,
 									5,
-									"1497958627.0770004"
+									"1498030201.196041"
+								],
+								"498":
+								[
+									-5515830693396739415,
+									4,
+									"hex_compressed",
+									-6070772727724542596,
+									36,
+									"1498033516.072573"
+								],
+								"521":
+								[
+									-5515832078960405280,
+									4,
+									"hex_compressed",
+									-6070772727724542596,
+									12,
+									"1498031352.5185184"
 								],
 								"81":
 								[
-									-2131330996548910186,
+									-5516881646074032859,
 									4,
 									"hex_compressed",
-									-5515027042888217439,
+									-6070772727724542596,
 									1,
-									"1497958627.07019"
+									"1498030201.1918783"
 								],
 								"93":
 								[
-									-2131420824828302094,
+									-5515830693396739415,
 									4,
 									"hex_compressed",
-									-5515027042888217439,
+									-6070772727724542596,
 									2,
-									"1497958627.072537"
+									"1498030201.192986"
 								]
 							},
 							"color_helper.scan":
 							{
 								"allowed_colors":
 								[
-									"hex_compressed",
 									"rgba",
+									"hex_compressed",
 									"webcolors",
-									"hsl",
 									"rgb",
-									"hex",
-									"hsla"
+									"hsl",
+									"hsla",
+									"hex"
 								],
 								"compress_hex_output": true,
 								"current_ext": ".styl",
 								"current_syntax": "Stylus/Stylus",
 								"enabled": true,
-								"last_updated": 1497957493.14,
+								"last_updated": 1498029718.98,
 								"scan_completion_scopes":
 								[
 								],
@@ -1234,7 +1316,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -1243,15 +1325,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 459,
+						"buffer_size": 551,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								459,
-								459
+								221,
+								221
 							]
 						],
 						"settings":
@@ -1269,7 +1351,7 @@
 								"current_ext": ".js",
 								"current_syntax": "Babel/JavaScript (Babel)",
 								"enabled": false,
-								"last_updated": 1497957493.14
+								"last_updated": 1498029718.98
 							},
 							"git_savvy.file_path": "/home/simon/Desktop/testing/client/main.js",
 							"git_savvy.repo_path": "/home/simon/Desktop/testing",
@@ -1285,19 +1367,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "client/grapher.js",
+					"file": "packages/grapher-vue/package.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 934,
+						"buffer_size": 314,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								626,
-								626
+								314,
+								314
 							]
 						],
 						"settings":
@@ -1315,9 +1397,9 @@
 								"current_ext": ".js",
 								"current_syntax": "Babel/JavaScript (Babel)",
 								"enabled": false,
-								"last_updated": 1497957493.14
+								"last_updated": 1498029718.98
 							},
-							"git_savvy.file_path": "/home/simon/Desktop/testing/client/grapher.js",
+							"git_savvy.file_path": "/home/simon/Desktop/testing/packages/grapher-vue/package.js",
 							"git_savvy.repo_path": "/home/simon/Desktop/testing",
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
 						},
@@ -1325,7 +1407,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1334,15 +1416,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 431,
+						"buffer_size": 451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								385,
-								385
+								451,
+								451
 							]
 						],
 						"settings":
@@ -1360,7 +1442,7 @@
 								"current_ext": "",
 								"current_syntax": "Text/Plain text",
 								"enabled": false,
-								"last_updated": 1497957493.14
+								"last_updated": 1498029718.98
 							},
 							"git_savvy.file_path": "/home/simon/Desktop/testing/.meteor/packages",
 							"git_savvy.repo_path": "/home/simon/Desktop/testing",
@@ -1370,7 +1452,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -1379,15 +1461,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1066,
+						"buffer_size": 915,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								472,
-								472
+								729,
+								729
 							]
 						],
 						"settings":
@@ -1404,19 +1486,19 @@
 							{
 								"allowed_colors":
 								[
-									"hex_compressed",
 									"rgba",
+									"hex_compressed",
 									"webcolors",
-									"hsl",
 									"rgb",
-									"hex",
-									"hsla"
+									"hsl",
+									"hsla",
+									"hex"
 								],
 								"compress_hex_output": true,
 								"current_ext": ".vue",
 								"current_syntax": "Vue Syntax Highlight/vue",
 								"enabled": true,
-								"last_updated": 1497957493.14,
+								"last_updated": 1498029718.98,
 								"scan_completion_scopes":
 								[
 								],
@@ -1436,33 +1518,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 160.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 5,
-					"file": "node_modules/vue-meteor-tracker/lib/vue-plugin.js",
+					"file": "packages/grapher-vue/grapher-vue.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8403,
+						"buffer_size": 2199,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7202,
-								7202
+								1307,
+								1307
 							]
 						],
 						"settings":
@@ -1480,7 +1556,293 @@
 								"current_ext": ".js",
 								"current_syntax": "Babel/JavaScript (Babel)",
 								"enabled": false,
-								"last_updated": 1497957493.14
+								"last_updated": 1498029718.98
+							},
+							"git_savvy.file_path": "/home/simon/Desktop/testing/packages/grapher-vue/grapher-vue.js",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1993,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1752,
+								1752
+							]
+						],
+						"settings":
+						{
+							"__vi_external_disable": false,
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": null,
+								"current_syntax": "GitSavvy/syntax/status",
+								"enabled": false,
+								"last_updated": 1498029718.98
+							},
+							"default_dir": "/home/simon/Desktop/testing",
+							"git_savvy.help_hidden": false,
+							"git_savvy.interface": "status",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing",
+							"git_savvy.status_view": true,
+							"git_savvy.tabbable": true,
+							"syntax": "Packages/GitSavvy/syntax/status.sublime-syntax",
+							"tab_size": 2,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"rgba",
+									"hex_compressed",
+									"webcolors",
+									"rgb",
+									"hsl",
+									"hsla",
+									"hex"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".md",
+								"current_syntax": "Markdown/Markdown",
+								"enabled": true,
+								"last_updated": 1498029718.98,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.declaration-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted -constant.character.entity.html",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"git_savvy.file_path": "/home/simon/Desktop/testing/README.md",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "both/collection.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 580,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								355,
+								355
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "Babel/JavaScript (Babel)",
+								"enabled": false,
+								"last_updated": 1498029718.98
+							},
+							"git_savvy.file_path": "/home/simon/Desktop/testing/lib/collection.js",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"file": "packages/grapher-vue/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								646,
+								646
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"rgba",
+									"hex_compressed",
+									"webcolors",
+									"rgb",
+									"hsl",
+									"hsla",
+									"hex"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".md",
+								"current_syntax": "Markdown/Markdown",
+								"enabled": true,
+								"last_updated": 1498029718.98,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.declaration-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted -constant.character.entity.html",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"git_savvy.file_path": "/home/simon/Desktop/testing/packages/grapher-vue/README.md",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "node_modules/vue-meteor-tracker/lib/vue-plugin.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								594,
+								594
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "Babel/JavaScript (Babel)",
+								"enabled": false,
+								"last_updated": 1498029718.98
 							},
 							"git_savvy.file_path": "/home/simon/Desktop/testing/node_modules/vue-meteor-tracker/lib/vue-plugin.js",
 							"git_savvy.repo_path": "/home/simon/Desktop/testing",
@@ -1489,10 +1851,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4195.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -1602,7 +1964,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 256.0,
+	"side_bar_width": 357.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

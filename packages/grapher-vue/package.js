@@ -1,12 +1,12 @@
 Package.describe({
   name: 'herteby:grapher-vue',
-  version: '0.1.0',
+  version: '0.1.5',
   summary: 'Integrates Vue and Grapher in an easy-to-use way',
   git: 'https://github.com/Herteby/grapher-vue',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-	api.use('ecmascript');
+	api.use('ecmascript@0.6.1');
 	api.mainModule('grapher-vue.js');
 });
