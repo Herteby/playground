@@ -4,6 +4,7 @@ Vue.use(VueMeteorTracker)
 import GrapherVue from 'meteor/herteby:grapher-vue'
 Vue.use(GrapherVue)
 Vue.prototype._ = _ //add Underscore to Vue
+Vue.prototype.Meteor = Meteor
 Vue.config.meteor.freeze = true
 import test from './components/test.vue'
 new Vue({

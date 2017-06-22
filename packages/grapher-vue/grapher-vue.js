@@ -1,13 +1,4 @@
-import {Minimongo} from 'meteor/minimongo'
-function get(obj, key) {
-	return key.split(".").reduce(function(parent, child) {
-		if(parent === undefined || parent === null){
-			return parent
-		} else {
-			return parent[child]
-		}
-	}, obj)
-}
+//import {Minimongo} from 'meteor/minimongo'
 export default {
 	install(Vue, options){
 		Vue.mixin({
@@ -28,6 +19,9 @@ export default {
 						let nonreactive
 						//Run this function once, and every time the query parameters change
 						let unwatch = this.$watch(fn, params => {
+							if(typeof params !== 'object'){
+								throw new Error('Parameters must be an object')
+							}
 							nonreactive = params.reactive === false
 							let start = new Date(), time
 							if(!this._grapher[name]){ //Create the query
@@ -51,10 +45,10 @@ export default {
 									if(err){
 										console.err(err)
 									} else {
-										if(params.where){
+										/*if(params.where){
 											let matcher = new Minimongo.Matcher(params.where)
 											data = _.filter(data, doc => matcher.documentMatches(doc).result)
-										}
+										}*/
 										if(params.single){
 											data = data[0]
 										}
@@ -72,6 +66,8 @@ export default {
 								query.subscribe()
 								if(oldSub){
 									oldSub.stop()
+								} else { //Handle switching from method-based
+									readyOnce = false
 								}
 								if(computation){
 									this.$stopHandle(computation)
@@ -85,10 +81,10 @@ export default {
 										time = new Date() - start
 									}
 									let data = query.fetch()
-									if(params.where){
+									/*if(params.where){
 										let matcher = new Minimongo.Matcher(params.where)
 										data = _.filter(data, doc => matcher.documentMatches(doc).result)
-									}
+									}*/
 									if(params.single){
 										data = data[0]
 									}
