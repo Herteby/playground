@@ -11,15 +11,10 @@ new Vue({
 	render: h => h('test')
 })
 
-//Testing if Vue components can be used in <head>. Turns out it works :D
+//Testing if Vue components can be used in <head>. Turns out they can :D
 new Vue({
 	el:'title',
-	meteor:{
-		number(){
-			return ((Test.findOne() || {}).color || this.number || '')
-		}
-	},
 	render(h){
-		return	h('title','Meteor + Grapher + Vue = ' + this.number)
+		return	h('title','Meteor + Grapher + Vue')
 	}
 })

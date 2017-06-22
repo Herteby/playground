@@ -1,5 +1,5 @@
 <template>
-	<div class="item" :style="style" class="item">{{data._id}} : #{{data.color.toString(16)}}</div>
+	<div class="item" :style="style" class="item">{{data._id}} : {{data.color}}</div>
 </template>
 
 <script>
@@ -8,8 +8,7 @@
 		computed:{
 			style(){
 				return {
-					background:'#' + this.data.color.toString(16),
-					color:'#' + (4096 - this.data.color).toString(16),
+					background:this.data.color,
 					borderRadius:this.data.extra && this.data.extra.corners == 'rounded' ? '50px' : '0'
 				}
 			}

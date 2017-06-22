@@ -16,7 +16,7 @@ if(Meteor.isServer){
 	Test.expose()
 	Test2.expose()
 	Meteor.setInterval(()=>{
-		Test.upsert(randInt(1,50),{$set:{color:randInt(256,4096)}}) //Number as _id? Apparently okay, and doesn't get converted to String
+		Test.upsert(randInt(1,50),{$set:{color:'#' + randInt(256,4096).toString(16)}}) //Number as _id? Apparently okay, and doesn't get converted to String
 		Test2.upsert(randInt(1,50),{$set:{corners:randInt(0,1) ? 'rounded' : 'square'}})
 	},50)
 }

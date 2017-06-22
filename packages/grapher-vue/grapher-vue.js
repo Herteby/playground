@@ -1,3 +1,13 @@
+import {Minimongo} from 'meteor/minimongo'
+function get(obj, key) {
+	return key.split(".").reduce(function(parent, child) {
+		if(parent === undefined || parent === null){
+			return parent
+		} else {
+			return parent[child]
+		}
+	}, obj)
+}
 export default {
 	install(Vue, options){
 		Vue.mixin({
@@ -37,16 +47,23 @@ export default {
 									query.unsubscribe()
 								}
 								this[name].ready = false 
-								query[params.single ? 'fetchOne' : 'fetch']((err,res) => {
+								query.fetch((err,data) => {
 									if(err){
 										console.err(err)
 									} else {
+										if(params.where){
+											let matcher = new Minimongo.Matcher(params.where)
+											data = _.filter(data, doc => matcher.documentMatches(doc).result)
+										}
+										if(params.single){
+											data = data[0]
+										}
 										this[name] = {
 											ready:true,
 											readyOnce:true,
-											count:params.single ? undefined : res.length,
+											count:params.single ? undefined : data.length,
 											time:new Date() - start,
-											data:res
+											data:data
 										}
 									}
 								})
@@ -67,7 +84,14 @@ export default {
 									if(ready && !time){
 										time = new Date() - start
 									}
-									let data = query[params.single ? 'fetchOne' : 'fetch']()
+									let data = query.fetch()
+									if(params.where){
+										let matcher = new Minimongo.Matcher(params.where)
+										data = _.filter(data, doc => matcher.documentMatches(doc).result)
+									}
+									if(params.single){
+										data = data[0]
+									}
 									this[name] = Object.freeze({
 										ready:ready,
 										readyOnce:readyOnce,

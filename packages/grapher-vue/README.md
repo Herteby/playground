@@ -2,11 +2,11 @@
 
 This package makes using [Grapher](http://grapher.cultofcoders.com/) with [Vue](https://vuejs.org/) in [Meteor](https://www.meteor.com/) easy. It automatically subscribes to your queries when the component is loaded, and unsubscribes to them when the component is destroyed.
 
+Query paramaters are reactive, using Vue's reactivity. If you for example use `this.limit` in your query, and `this.limit` changes, it will update the query and subscription. If you want to turn this off, add `reactive:false`.
+
 You can also fetch data nonreactively, by adding `subscribe:false`. It uses the same result structure as the subscribe version. It will first return an object `{ready:false,data:[]}`. Once it finishes, the object will be updated with the results.
 
-It also supports reactive query paramaters, using Vue's reactivity. If you for example use `this.limit` in your query, and `this.limit` changes, it will update the query and subscription. If you want to turn this off, add `reactive:false`.
-
-If you add `single:true`, it will work like fetchOne(), and `data` will be a single object, instead of an Array. When using `single:true`, `limit:1` is added automatically.
+If you add `single:true`, it will work like `fetchOne()`, and `data` will be a single object instead of an Array. When using `single:true`, `limit:1` is added automatically.
 
 ## Installation
 ```
