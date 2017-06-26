@@ -1,5 +1,5 @@
 <template>
-	<div class="item" :class="{selected:data.selected}" :style="style" @click="Meteor.call('select',data._id)">{{data._id}} : {{data.color}}</div>
+	<div :class="{item:true,selected:data.selected}" :style="style" @click="Meteor.call('select',data._id)">{{data._id}} : {{data.color}}</div>
 </template>
 
 <script>

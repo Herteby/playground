@@ -1,0 +1,1588 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"subsc",
+				"subscriptionHandle"
+			],
+			[
+				"sub",
+				"subscriptionHandle"
+			],
+			[
+				"ld",
+				"ld.chunk()\t _ Array"
+			],
+			[
+				"cld",
+				"cld.compact()\t _ Array"
+			],
+			[
+				"F",
+				"Facebook"
+			],
+			[
+				"app",
+				"appendChild〔function〕"
+			],
+			[
+				"round",
+				"Math_round\t( x: number ): number Math"
+			],
+			[
+				"Math",
+				"Math_round\t( x: number ): number Math"
+			],
+			[
+				"S",
+				"String\t( value: any ): String String"
+			],
+			[
+				"translate",
+				"translation〔variable〕"
+			],
+			[
+				"a",
+				"appendChild〔function〕"
+			],
+			[
+				"Dictionary",
+				"DictionaryCache"
+			],
+			[
+				"up",
+				"upsert (fn) [C]"
+			],
+			[
+				"Rea",
+				"ReactiveVar    (fn) [C]"
+			],
+			[
+				"confirm",
+				"confirm\t( message?: DOMString ): boolean Window"
+			],
+			[
+				"wor",
+				"word-wrap\tstyl"
+			],
+			[
+				"paddin",
+				"padding-right\tstyl"
+			],
+			[
+				"text",
+				"text-transform\tstyl"
+			],
+			[
+				"get",
+				"getRouteName"
+			],
+			[
+				"flex",
+				"flex-direction\tstyl"
+			],
+			[
+				"g",
+				"getRouteName"
+			],
+			[
+				"client",
+				"clientaddress"
+			],
+			[
+				"launc",
+				"launchScreens"
+			],
+			[
+				"animation",
+				"animation-delay"
+			],
+			[
+				"animation-",
+				"animation-iteration-count"
+			],
+			[
+				"Date",
+				"Date〔class〕"
+			],
+			[
+				"day",
+				"dayOrId"
+			],
+			[
+				"Push",
+				"PushNotification〔variable〕"
+			],
+			[
+				"border-top",
+				"border-top-right-radius"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"pre",
+				"pre-wrap"
+			],
+			[
+				"ju",
+				"justify-content"
+			],
+			[
+				"right",
+				"rightSidebar"
+			],
+			[
+				"atte",
+				"attemptModal"
+			],
+			[
+				"class",
+				"cellClass"
+			],
+			[
+				"animat",
+				"animation-name"
+			],
+			[
+				"upl",
+				"uploadedAt"
+			],
+			[
+				"anim",
+				"animation-timing-function"
+			],
+			[
+				"vertica",
+				"vertical-align"
+			],
+			[
+				"animta",
+				"animation-iteration-count"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"ani",
+				"animation-iteration-count"
+			],
+			[
+				"c",
+				"Collection"
+			],
+			[
+				"border",
+				"border-bottom-left-radius"
+			],
+			[
+				"backgro",
+				"background-size"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"dra",
+				"dragTodo"
+			],
+			[
+				"vert",
+				"vertical-align"
+			],
+			[
+				"workorderlin",
+				"workorderlinelimit"
+			],
+			[
+				"work",
+				"Workorderlines"
+			],
+			[
+				"anima",
+				"animation-name"
+			],
+			[
+				"trans",
+				"transition-timing-function"
+			],
+			[
+				"tran",
+				"transition-timing-function"
+			],
+			[
+				"mo",
+				"mouseenter\t.mouseenter()"
+			],
+			[
+				"web",
+				"webkit-appearance"
+			],
+			[
+				"workorder",
+				"workorders"
+			],
+			[
+				"pointer",
+				"pointer-events"
+			],
+			[
+				"initia",
+				"initialize_MarkerWithLabel"
+			],
+			[
+				"flex-",
+				"flex-grow"
+			],
+			[
+				"overf",
+				"overflow-x"
+			],
+			[
+				"lin",
+				"line-through"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"border-botto",
+				"border-bottom-right-radius"
+			],
+			[
+				"first",
+				"first-of-type"
+			],
+			[
+				"user",
+				"user-select"
+			],
+			[
+				"border-bottom",
+				"border-bottom-left-radius"
+			],
+			[
+				"la",
+				"latLng"
+			],
+			[
+				"modal",
+				"modalBackground"
+			],
+			[
+				"poinr",
+				"pointer-events"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"ca",
+				"capitalizeFirstLetter"
+			],
+			[
+				"last-",
+				"last-of-type"
+			],
+			[
+				"webkit",
+				"webkit-scrollbar"
+			],
+			[
+				"bord",
+				"border-bottom-left-radius"
+			],
+			[
+				"border-",
+				"border-bottom-right-radius"
+			],
+			[
+				"poin",
+				"pointer-events"
+			],
+			[
+				"border-bott",
+				"border-bottom-right-radius"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"po",
+				"pointer-events"
+			],
+			[
+				"border-bo",
+				"border-bottom-right-radius"
+			],
+			[
+				"last",
+				"last-of-type"
+			],
+			[
+				"load",
+				"loadmore"
+			],
+			[
+				"ease",
+				"ease-in-out"
+			],
+			[
+				"obser",
+				"observeChanges\tMeteor: cursor.observeChanges(callbacks)"
+			],
+			[
+				"Tracker",
+				"Tracker.autorun\tMeteor: Tracker.autorun(runFunc)"
+			],
+			[
+				"bq",
+				"bqgreen2"
+			],
+			[
+				"bqgree",
+				"bqgreen"
+			],
+			[
+				"lgrey",
+				"lgrey4"
+			],
+			[
+				"lg",
+				"lgrey1"
+			],
+			[
+				"n",
+				"nowrap"
+			],
+			[
+				"true",
+				"trueEmployee"
+			],
+			[
+				"bqgreen",
+				"bqgreen3"
+			],
+			[
+				"border-lef",
+				"border-bottom-left-radius"
+			],
+			[
+				"border-left",
+				"border-top-left-radius"
+			],
+			[
+				"border-right",
+				"border-bottom-right-radius"
+			],
+			[
+				"dgrey",
+				"dgrey2"
+			],
+			[
+				"bor",
+				"border-top-right-radius"
+			],
+			[
+				"border-t",
+				"border-top-left-radius"
+			],
+			[
+				"border-radius",
+				"border-top-right-radius"
+			],
+			[
+				"total",
+				"totalcostmax   (num)  [E]"
+			],
+			[
+				"bal",
+				"balconycost (num)  [E]"
+			],
+			[
+				"fonster",
+				"fonsterkarmarcost (num)  [E]"
+			],
+			[
+				"fons",
+				"fonsterkarmarcost (num)  [E]"
+			],
+			[
+				"clea",
+				"cleaningcostmax     (num)  [E]"
+			],
+			[
+				"cleaning",
+				"cleaningcostmin     (obj)  [E]"
+			],
+			[
+				"border-radi",
+				"border-bottom-right-radius"
+			],
+			[
+				"border-c",
+				"border-collapse"
+			],
+			[
+				"cleaningcost",
+				"cleaningcostmax     (num)  [E]"
+			],
+			[
+				"Work",
+				"WorkorderLines"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "\n  BRANCH:  On branch `postOptions` tracking `herteby/postOptions`.\n  ROOT:    ~/Desktop/testing/packages/grapher\n  HEAD:    55f5937 updated tests\n\n  UNSTAGED:\n    .npm/package/npm-shrinkwrap.json\n    lib/query/lib/prepareForDelivery.js\n\n  UNTRACKED:\n    .npm/package/package-lock.json\n\n  ###################                   ###############\n  ## SELECTED FILE ##                   ## ALL FILES ##\n  ###################                   ###############\n\n  [o] open file                         [a] stage all unstaged files\n  [s] stage file                        [A] stage all unstaged and untracked files\n  [u] unstage file                      [U] unstage all staged files\n  [d] discard changes to file           [D] discard all unstaged changes\n  [h] open file on remote\n  [M] launch external merge tool for conflict\n\n  [l] diff file inline                  [f] diff all files\n  [e] diff file                         [F] diff all cached files\n\n  #############                         #############\n  ## ACTIONS ##                         ## STASHES ##\n  #############                         #############\n\n  [c] commit                            [t][a] apply stash\n  [C] commit, including unstaged        [t][p] pop stash\n  [m] amend previous commit             [t][s] show stash\n  [p] push current branch               [t][c] create stash\n                                        [t][u] create stash including untracked files\n  [i] ignore file                       [t][g] create stash of staged changes only\n  [I] ignore pattern                    [t][d] discard stash\n\n  ###########\n  ## OTHER ##\n  ###########\n\n  [r]         refresh status\n  [?]         toggle this help menu\n  [tab]       transition to next dashboard\n  [SHIFT-tab] transition to previous dashboard\n  [.]         move cursor to next file\n  [,]         move cursor to previous file\n\n-\n\n",
+			"settings":
+			{
+				"buffer_size": 1861,
+				"line_ending": "Unix",
+				"name": "STATUS: grapher",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "Searching 112 files for \"subscribe\"\n\n/home/simon/Desktop/testing/packages/grapher/lib/exposure/testing/client.js:\n   73          });\n   74  \n   75:         const handler = query.subscribe({\n   76              onStop(e) {\n   77                  done();\n   ..\n   90          });\n   91  \n   92:         query.subscribe({\n   93              onReady() {\n   94                  done();\n   ..\n  177          });\n  178  \n  179:         const handle = query.subscribe();\n  180  \n  181          Tracker.autorun((c) => {\n\n/home/simon/Desktop/testing/packages/grapher/lib/namedQuery/namedQuery.client.js:\n    8  export default class extends Base {\n    9      /**\n   10:      * Subscribe\n   11       *\n   12       * @param callback\n   13       * @returns {null|any|*}\n   14       */\n   15:     subscribe(callback) {\n   16:         this.subscriptionHandle = Meteor.subscribe(\n   17              this.name,\n   18              this.params,\n   ..\n   24  \n   25      /**\n   26:      * Unsubscribe if an existing subscription exists\n   27       */\n   28:     unsubscribe() {\n   29          if (this.subscriptionHandle) {\n   30              this.subscriptionHandle.stop();\n   ..\n  114      _fetchStatic(callback) {\n  115          if (!callback) {\n  116:             throw new Meteor.Error('not-allowed', 'You are on client so you must either provide a callback to get the data or subscribe first.');\n  117          }\n  118  \n\n/home/simon/Desktop/testing/packages/grapher/lib/namedQuery/testing/client.test.js:\n   57          });\n   58  \n   59:         const handle = query.subscribe();\n   60  \n   61          Tracker.autorun(c => {\n   ..\n   83          });\n   84  \n   85:         const handle = query.subscribe();\n   86  \n   87          Tracker.autorun(c => {\n\n/home/simon/Desktop/testing/packages/grapher/lib/query/query.client.js:\n    8  export default class Query extends Base {\n    9      /**\n   10:      * Subscribe\n   11       *\n   12       * @param callback {Function} optional\n   13       * @returns {null|any|*}\n   14       */\n   15:     subscribe(callback) {\n   16:         this.subscriptionHandle = Meteor.subscribe(\n   17              this.name,\n   18              prepareForProcess(this.body, this.params),\n   ..\n   24  \n   25      /**\n   26:      * Unsubscribe if an existing subscription exists\n   27       */\n   28:     unsubscribe() {\n   29          if (this.subscriptionHandle) {\n   30              this.subscriptionHandle.stop();\n   ..\n  114      _fetchStatic(callback) {\n  115          if (!callback) {\n  116:             throw new Meteor.Error('not-allowed', 'You are on client so you must either provide a callback to get the data or subscribe first.');\n  117          }\n  118  \n\n/home/simon/Desktop/testing/packages/grapher/lib/query/testing/client.test.js:\n   47          });\n   48  \n   49:         const handle = query.subscribe();\n   50  \n   51          Tracker.autorun(c => {\n   ..\n   81          });\n   82  \n   83:         let handle = query.subscribe();\n   84          Tracker.autorun((c) => {\n   85              if (handle.ready()) {\n   ..\n  109          });\n  110  \n  111:         let handle = query.subscribe();\n  112          Tracker.autorun((c) => {\n  113              if (handle.ready()) {\n  ...\n  139          });\n  140  \n  141:         let handle = query.subscribe();\n  142  \n  143          Tracker.autorun((c) => {\n  ...\n  171          });\n  172  \n  173:         let handle = query.subscribe();\n  174  \n  175          Tracker.autorun((c) => {\n\n/home/simon/Desktop/testing/packages/grapher/lib/query/testing/reducers.client.test.js:\n   10          });\n   11  \n   12:         let handle = query.subscribe();\n   13          await waitForHandleToBeReady(handle);\n   14          const data = query.fetch();\n   ..\n   32          });\n   33  \n   34:         let handle = query.subscribe();\n   35          await waitForHandleToBeReady(handle);\n   36          const data = query.fetch();\n   ..\n   58          });\n   59  \n   60:         let handle = query.subscribe();\n   61          await waitForHandleToBeReady(handle);\n   62          const data = query.fetch();\n   ..\n   83          });\n   84  \n   85:         let handle = query.subscribe();\n   86          await waitForHandleToBeReady(handle);\n   87          const data = query.fetch();\n   ..\n  104          });\n  105  \n  106:         let handle = query.subscribe();\n  107          await waitForHandleToBeReady(handle);\n  108          const data = query.fetch();\n  ...\n  127          });\n  128  \n  129:         let handle = query.subscribe();\n  130          await waitForHandleToBeReady(handle);\n  131          const data = query.fetch();\n  ...\n  153          });\n  154  \n  155:         let handle = query.subscribe();\n  156          await waitForHandleToBeReady(handle);\n  157          const data = query.fetch();\n  ...\n  180          });\n  181  \n  182:         let handle = query.subscribe();\n  183          await waitForHandleToBeReady(handle);\n  184          const data = query.fetch();\n\n/home/simon/Desktop/testing/packages/grapher/lib/query/testing/security.client.test.js:\n   13          });\n   14  \n   15:         const handle = query.subscribe();\n   16  \n   17          await waitForHandleToBeReady(handle);\n\n31 matches across 7 files\n\n\nSearching 112 files for \"preparefordelivery\"\n\n/home/simon/Desktop/testing/packages/grapher/lib/query/hypernova/hypernova.js:\n    1  import applyProps from '../lib/applyProps.js';\n    2: import prepareForDelivery from '../lib/prepareForDelivery.js';\n    3  import storeHypernovaResults from './storeHypernovaResults.js';\n    4  \n    .\n   30      hypernova(collectionNode, userIdToPass);\n   31  \n   32:     prepareForDelivery(collectionNode);\n   33  \n   34      return collectionNode.results;\n\n/home/simon/Desktop/testing/packages/grapher/lib/query/lib/recursiveFetch.js:\n    1  import applyProps from './applyProps.js';\n    2: import { assembleMetadata, removeLinkStorages, storeOneResults } from './prepareForDelivery';\n    3: import prepareForDelivery from './prepareForDelivery';\n    4  \n    5  /**\n    .\n   49      node.results = fetch(node);\n   50  \n   51:     prepareForDelivery(node);\n   52  \n   53      return node.results;\n\n7 matches across 2 files\n\n\nSearching 112 files for \"postfilter\"\n\n/home/simon/Desktop/testing/packages/grapher/lib/query/lib/createGraph.js:\n    5  import createReducers from '../reducers/lib/createReducers';\n    6  \n    7: const specialFields = ['$filters', '$options', '$postFilters','$postOptions'];\n    8  \n    9  /**\n   ..\n   22          }\n   23  \n   24:         if(fieldName === '$postFilter'){\n   25              if(Meteor.isDevelopment){\n   26:                 console.warn('$postFilter is deprecated. Use $postFilters instead');\n   27              }\n   28:             fieldName = '$postFilters';\n   29          }\n   30  \n\n/home/simon/Desktop/testing/packages/grapher/lib/query/lib/prepareForDelivery.js:\n   11      applyReducers(node);\n   12      cleanReducerLeftovers(node);\n   13:     applyPostFilters(node);\n   14      applyPostOptions(node);\n   15  \n   ..\n   27  }\n   28  \n   29: export function applyPostFilters(node) {\n   30:     const postFilters = node.props.$postFilters || node.props.$postFilter;\n   31:     if (postFilters) {\n   32:         node.results = sift(postFilters, node.results);\n   33      }\n   34  \n   35      node.collectionNodes.forEach(collectionNode => {\n   36:         applyPostFilters(collectionNode);\n   37      })\n   38  }\n\n/home/simon/Desktop/testing/packages/grapher/lib/query/testing/server.test.js:\n  369      });\n  370  \n  371:     it('Should work with $postFilters', function () {\n  372          let query = createQuery({\n  373              posts: {\n  374:                 $postFilters: {\n  375                      'comments.text': 'Non existing comment',\n  376                  },\n  ...\n  387          query = createQuery({\n  388              posts: {\n  389:                 $postFilters: {\n  390                      'comments.text': 'Good',\n  391                  },\n\n16 matches across 3 files\n\n\nSearching 112 files for \"publish\"\n\n/home/simon/Desktop/testing/packages/grapher/lib/exposure/exposure.js:\n  126          const getTransformedBody = this.getTransformedBody.bind(this);\n  127  \n  128:         Meteor.publishComposite(this.name, function (body) {\n  129              let transformedBody = getTransformedBody(body);\n  130  \n\n/home/simon/Desktop/testing/packages/grapher/lib/exposure/testing/client.js:\n   63      });\n   64  \n   65:     it('Should should not allow publish but only method', function (done) {\n   66          const query = DemoMethod.createQuery({\n   67              _id: 1\n   ..\n   80      });\n   81  \n   82:     it('Should should not allow method but only publish', function (done) {\n   83          const query = DemoPublication.createQuery({\n   84              _id: 1\n\n/home/simon/Desktop/testing/packages/grapher/lib/namedQuery/expose/extension.js:\n   81          const self = this;\n   82  \n   83:         Meteor.publishComposite(this.name, function (newParams) {\n   84              self._validateParams(newParams);\n   85  \n\n4 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 9063,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 357.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"push fo",
+				"git: push (force)"
+			],
+			[
+				"git sta",
+				"git: status"
+			],
+			[
+				"push",
+				"git: push"
+			],
+			[
+				"bran",
+				"git: branch"
+			],
+			[
+				"pull",
+				"git: pull"
+			],
+			[
+				"fetch",
+				"git: fetch"
+			],
+			[
+				"diff",
+				"git: diff current file"
+			],
+			[
+				"force",
+				"git: push (force)"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"stat",
+				"git: status"
+			],
+			[
+				"log",
+				"git: log current file"
+			],
+			[
+				"git stats",
+				"git: status"
+			],
+			[
+				"git pus",
+				"git: push (force)"
+			],
+			[
+				"amend",
+				"git: amend previous commit"
+			],
+			[
+				"git stage",
+				"git: quick stage"
+			],
+			[
+				"git co",
+				"git: quick commit"
+			],
+			[
+				"git pu",
+				"git: push"
+			],
+			[
+				"git st",
+				"git: status"
+			],
+			[
+				"git p",
+				"git: push"
+			],
+			[
+				"gitco",
+				"git: commit including unstaged files"
+			],
+			[
+				"git stat",
+				"git: status"
+			],
+			[
+				"sta",
+				"git: status"
+			],
+			[
+				"force ",
+				"git: push (force)"
+			],
+			[
+				"git mer",
+				"git: abort merge"
+			],
+			[
+				"git resol",
+				"git: restart merge for file..."
+			],
+			[
+				"git",
+				"git: merge"
+			],
+			[
+				"git pull",
+				"git: pull"
+			],
+			[
+				"git a",
+				"git: amend previous commit"
+			],
+			[
+				"",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"box",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"commit",
+				"git: commit including unstaged files"
+			],
+			[
+				"git file",
+				"git: log current file"
+			],
+			[
+				"commi",
+				"git: commit including unstaged files"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"DI",
+				"Package Control: Disable Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"bo",
+				"Boxy Theme: Preferences"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"mat",
+				"Material Theme: Configuration"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remove package",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 412.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/simon/Desktop/testing/packages/grapher/grapher"
+	],
+	"file_history":
+	[
+		"/home/simon/Desktop/testing/packages/grapher/grapher/lib/query/testing/server.test.js",
+		"/home/simon/Desktop/testing/packages/grapher/grapher/lib/query/lib/prepareForDelivery.js",
+		"/home/simon/Desktop/testing/packages/grapher/grapher/lib/query/lib/createGraph.js",
+		"/home/simon/Desktop/testing/packages/grapher/grapher/.git/config",
+		"/home/simon/Desktop/testing/packages/grapher/grapher/lib/exposure/exposure.js",
+		"/home/simon/Desktop/testing/packages/grapher/.git/index",
+		"/home/simon/Desktop/testing/packages/grapher/.git/ORIG_HEAD",
+		"/home/simon/Desktop/testing/packages/grapher/.eslintrc",
+		"/home/simon/.config/sublime-text-3/Packages/User/SuperMonokai.tmTheme",
+		"/home/simon/Desktop/testing/client/components/test.vue",
+		"/home/simon/Desktop/testing/node_modules/vue-meteor-tracker/lib/vue-plugin.js",
+		"/home/simon/Desktop/testing/packages/grapher-vue/README.md",
+		"/home/simon/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/home/simon/Desktop/testing/client/grapher.js",
+		"/home/simon/Desktop/testing/packages/grapher-vue/grapher-vue-tests.js",
+		"/home/simon/Desktop/testing/.eslintrc",
+		"/home/simon/Desktop/testing/README.md",
+		"/home/simon/Desktop/testing/.meteor/packages",
+		"/home/simon/Desktop/testing/lib/collection.js",
+		"/home/simon/Desktop/testing/client/components/tree-view.vue",
+		"/home/simon/Desktop/testing/client/components/tree-view-item.vue",
+		"/home/simon/Desktop/testing/server/main.js",
+		"/home/simon/Desktop/Keymaster/lib/_first/settings.js",
+		"/home/simon/Desktop/Keymaster/client/reactiveTable.js",
+		"/home/simon/Desktop/Keymaster/client/handlebars.js",
+		"/home/simon/Desktop/Keymaster/lib/_first/shared.js",
+		"/usr/bin/syncthing",
+		"/home/simon/Desktop/Projects/buildserver.sh",
+		"/home/simon/Desktop/Keymaster/client/functions.js",
+		"/home/simon/Desktop/Keymaster/client/main.js",
+		"/home/simon/Desktop/Keymaster/client/push.js",
+		"/home/simon/Desktop/Keymaster/client/translate.js",
+		"/home/simon/Desktop/Keymaster/client/ztinymce.js",
+		"/home/simon/Desktop/Keymaster/client/templates/GPS.js",
+		"/home/simon/Desktop/Keymaster/client/templates/adminEditItem.js",
+		"/home/simon/Desktop/Keymaster/client/templates/adminItems.js",
+		"/home/simon/Desktop/Keymaster/client/templates/categories.js",
+		"/home/simon/Desktop/Keymaster/client/templates/changePassword.js",
+		"/home/simon/Desktop/Keymaster/client/templates/chat.js",
+		"/home/simon/Desktop/Keymaster/client/templates/checkOut.js",
+		"/home/simon/Desktop/Keymaster/client/templates/checkin.js",
+		"/home/simon/Desktop/Keymaster/client/templates/checkinLog.js",
+		"/home/simon/Desktop/Keymaster/client/templates/dailyKeys.js",
+		"/home/simon/Desktop/Keymaster/client/templates/dictionary.js",
+		"/home/simon/Desktop/Keymaster/client/templates/documents.js",
+		"/home/simon/Desktop/Keymaster/client/templates/editFaq.js",
+		"/home/simon/Desktop/Keymaster/client/templates/feedback.js",
+		"/home/simon/Desktop/Keymaster/client/templates/itemInfo.js",
+		"/home/simon/Desktop/Keymaster/client/templates/log.js",
+		"/home/simon/Desktop/Keymaster/client/templates/login.js",
+		"/home/simon/Desktop/Keymaster/client/templates/missionMap.js",
+		"/home/simon/Desktop/Keymaster/client/templates/myItems.js",
+		"/home/simon/Desktop/Keymaster/client/templates/quiz.js",
+		"/home/simon/Desktop/Keymaster/client/templates/quizAdmin.js",
+		"/home/simon/Desktop/Keymaster/client/templates/registerInspection.js",
+		"/home/simon/Desktop/Keymaster/client/templates/requests.js",
+		"/home/simon/Desktop/Keymaster/client/templates/returnItem.js",
+		"/home/simon/Desktop/Keymaster/client/templates/reviews.js",
+		"/home/simon/Desktop/Keymaster/client/templates/roles.js",
+		"/home/simon/Desktop/Keymaster/client/templates/serverlog.js",
+		"/home/simon/Desktop/Keymaster/client/templates/settings.js",
+		"/home/simon/Desktop/Keymaster/client/templates/terms.js",
+		"/home/simon/Desktop/Keymaster/client/templates/todos.js",
+		"/home/simon/Desktop/Keymaster/client/templates/userInfo.js",
+		"/home/simon/Desktop/Keymaster/client/templates/users.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/cancelMission.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/customerContacts.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/customerInfo.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/customerInvoices.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/faq.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/invoicePopup.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/missionPopup.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/news.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/calculator.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/chart.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/components.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/contextMenu.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/editor.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/fileSidebar.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/files.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/grouper.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/header.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/language.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/layout.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/modal.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/select.js",
+		"/home/simon/Desktop/Keymaster/lib/collections.js",
+		"/home/simon/Desktop/Keymaster/lib/methods.js",
+		"/home/simon/Desktop/Keymaster/lib/router.js",
+		"/home/simon/Desktop/Keymaster/lib/_first/functions.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/documents.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/files.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/items.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/missions.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/quiz.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/requests.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/reviews.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/todos.js",
+		"/home/simon/Desktop/Keymaster/lib/collections/users.js",
+		"/home/simon/Desktop/Keymaster/server/checkMissions.js",
+		"/home/simon/Desktop/Keymaster/server/checkNeededKeys.js",
+		"/home/simon/Desktop/Keymaster/server/cronJobs.js",
+		"/home/simon/Desktop/Keymaster/server/geocode.js",
+		"/home/simon/Desktop/Keymaster/server/messages.js",
+		"/home/simon/Desktop/Keymaster/server/methods.js",
+		"/home/simon/Desktop/Keymaster/server/publications.js",
+		"/home/simon/Desktop/Keymaster/server/startup.js",
+		"/home/simon/Desktop/Keymaster/server/stuff.js",
+		"/home/simon/Desktop/Keymaster/server/timewave.js",
+		"/home/simon/Desktop/Keymaster/server/translate.js",
+		"/home/simon/Desktop/Keymaster/server/lib/score.js",
+		"/home/simon/Desktop/Keymaster/client/style.styl",
+		"/home/simon/Desktop/Keymaster/server/zzz.js",
+		"/home/simon/Desktop/Keymaster/client/templates/editFaq.html",
+		"/home/simon/Desktop/Keymaster/server/push.js",
+		"/home/simon/Desktop/Keymaster/client/templates/users.html",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/sidebar.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/newVersion.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/lightbox.js",
+		"/home/simon/Desktop/Keymaster/client/templates/layout/choice.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/customerMissions.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/contactPage.js",
+		"/home/simon/Desktop/Keymaster/client/templates/customerportal/customerInfo.html",
+		"/home/simon/Desktop/Keymaster/client/templates/reportDisorder.js",
+		"/home/simon/Desktop/Keymaster/client/templates/quizResults.js",
+		"/home/simon/Desktop/Keymaster/client/templates/feedbackView.js",
+		"/home/simon/Desktop/Keymaster/client/templates/errors.js",
+		"/home/simon/Desktop/Keymaster/client/templates/display.js"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 118.0,
+		"where_history":
+		[
+			"/home/simon/Desktop/testing/packages/grapher/lib",
+			"/packages/grapher/lib",
+			"",
+			"*.js",
+			"",
+			"*.js",
+			"",
+			"server/",
+			"",
+			"server/",
+			"/server",
+			"",
+			"server/",
+			"/server",
+			"",
+			"-*.txt",
+			"",
+			"server/",
+			"",
+			"lib/",
+			"",
+			"lib/",
+			"server/",
+			"/server/",
+			"/server",
+			"",
+			"c",
+			"client",
+			"/client",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"publish",
+			"postfilter",
+			"preparefordelivery",
+			"subscribe",
+			"modify filters and options don",
+			"assert",
+			"postfilter",
+			"$postFilter",
+			"$postFilters",
+			"$postfilter",
+			"$postoption",
+			"fetch",
+			"\t",
+			"_",
+			"$autorun",
+			"$track",
+			"definereac",
+			"definereactive",
+			"_this.",
+			"$options",
+			"$grapher",
+			"$autorun",
+			"aut",
+			"$options.meteor",
+			"params",
+			"cancel",
+			"settingsready",
+			"setting = funct",
+			"settings = funct",
+			"settings",
+			"settingsReady",
+			"#if session",
+			"subscribe('settings",
+			".go",
+			"dl",
+			"{{>edit",
+			"{{> edit",
+			"type",
+			";",
+			"push.send",
+			"subscribe('faq",
+			"templet",
+			"var ",
+			";}",
+			"subscribe('faq",
+			"upload",
+			";\\n",
+			"tmpl",
+			"id",
+			"'schedules'",
+			"#week",
+			"schedule",
+			"30",
+			"11",
+			"arguments",
+			"#customer",
+			"Todos.update",
+			"Todos.",
+			"sharedtodos",
+			"syncedCron",
+			"Todos.remove",
+			"console",
+			"highlight",
+			"label",
+			"template name=\"files",
+			"cancel",
+			"kadira",
+			"setting('com",
+			"E6DB74",
+			"c88fe8",
+			"c88dc0",
+			"66D9EF",
+			"function",
+			"c88dc0",
+			"F92672",
+			"AE81FF",
+			"A6E22E",
+			"E6DB74",
+			"202224",
+			"faqs",
+			"created",
+			"edit",
+			"editing",
+			"getfin",
+			"observe",
+			"syncedcron.add",
+			"subscribe('files",
+			"stadalliansen",
+			"order",
+			"type",
+			": function (",
+			":function (",
+			": function(",
+			":function(",
+			"@.*",
+			".*:.*",
+			".userline",
+			"template name=\"",
+			".*:.*",
+			"rovar",
+			"rovare",
+			"extra",
+			"name=\"userline",
+			"name=userline",
+			"userline",
+			"push.send",
+			"user not found",
+			"loginwithpassword",
+			"createuser",
+			"contextmenu",
+			"pad",
+			"pathfor",
+			"print",
+			"azure",
+			"&amp;",
+			"setting(",
+			"permission",
+			"subscribe('sect",
+			"sections",
+			"section obs",
+			"wrap",
+			"unwrap",
+			"article",
+			"micro",
+			"azure",
+			"subscribe('sections",
+			"content",
+			"#documents"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"  ",
+			"_grapher",
+			"let ",
+			"}",
+			"\\n",
+			"c2ea82",
+			"c88fe8",
+			"74a9ff",
+			"c88dc0",
+			"fa7255",
+			"ffcc63",
+			"b8e988",
+			"263239",
+			"(",
+			"",
+			"\\\"",
+			" ",
+			"",
+			" ",
+			"",
+			"src=\"/",
+			"\t",
+			"users",
+			"quizEdit",
+			"driver:Shared",
+			"fileSidebar",
+			"role:{$ne:'customer'}",
+			"background-image",
+			"Subheading",
+			"subheading",
+			"FlowRouter.getRouteName()",
+			"FlowRouter.current().route.name",
+			"Flow",
+			"FlowRouter",
+			"",
+			"6px",
+			"",
+			"margin-bottom: 1px;",
+			"5px",
+			"",
+			"outline",
+			"user()",
+			"\t",
+			"Colors.",
+			"\\n",
+			"','",
+			"",
+			"','",
+			"",
+			"^not ",
+			"",
+			"\"",
+			"OS-X",
+			"OS X El Capitan",
+			"",
+			"'",
+			"background lgrey4",
+			"\t",
+			"background",
+			"0px 1px 3px",
+			"\t",
+			":'mobile/icon",
+			":'icon",
+			"",
+			"\t",
+			"'",
+			",",
+			",'",
+			"\t",
+			"",
+			"\t",
+			"','",
+			"",
+			"\t",
+			"user()",
+			"attr('name'",
+			"quizEdit",
+			"layout",
+			" ",
+			"\t",
+			"bold true",
+			"",
+			")\"",
+			"\")",
+			"\"hsl",
+			"\"),",
+			"),",
+			": ",
+			"arg",
+			"222222",
+			"notes",
+			"user",
+			"h4",
+			"h3",
+			"",
+			"\t",
+			"",
+			"  ",
+			"6",
+			"",
+			"to",
+			"from",
+			"\t",
+			"radius 4px",
+			"alert",
+			"me",
+			"td",
+			"\t",
+			"ease-out",
+			"Meteor.publish",
+			"PublishSecure",
+			"\t",
+			"class=\"article\"",
+			"interval",
+			"username",
+			"nowrap",
+			"time",
+			"ally",
+			"opponent",
+			"username",
+			"Items.",
+			"stuff",
+			":'",
+			"\t",
+			"",
+			"Requests",
+			"Request",
+			"request"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								252,
+								252
+							]
+						],
+						"settings":
+						{
+							"__vi_external_disable": false,
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": null,
+								"current_syntax": "GitSavvy/syntax/status",
+								"enabled": false,
+								"last_updated": 1498475401.35
+							},
+							"default_dir": "/home/simon/Desktop/testing/packages/grapher",
+							"git_savvy.help_hidden": false,
+							"git_savvy.interface": "status",
+							"git_savvy.repo_path": "/home/simon/Desktop/testing/packages/grapher",
+							"git_savvy.status_view": true,
+							"git_savvy.tabbable": true,
+							"syntax": "Packages/GitSavvy/syntax/status.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9063,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										178,
+										187
+									],
+									[
+										306,
+										315
+									],
+									[
+										449,
+										458
+									],
+									[
+										665,
+										674
+									],
+									[
+										781,
+										790
+									],
+									[
+										851,
+										860
+									],
+									[
+										969,
+										978
+									],
+									[
+										1042,
+										1051
+									],
+									[
+										1360,
+										1369
+									],
+									[
+										1553,
+										1562
+									],
+									[
+										1681,
+										1690
+									],
+									[
+										1891,
+										1900
+									],
+									[
+										2027,
+										2036
+									],
+									[
+										2097,
+										2106
+									],
+									[
+										2245,
+										2254
+									],
+									[
+										2318,
+										2327
+									],
+									[
+										2636,
+										2645
+									],
+									[
+										2824,
+										2833
+									],
+									[
+										2950,
+										2959
+									],
+									[
+										3111,
+										3120
+									],
+									[
+										3272,
+										3281
+									],
+									[
+										3400,
+										3409
+									],
+									[
+										3611,
+										3620
+									],
+									[
+										3787,
+										3796
+									],
+									[
+										3963,
+										3972
+									],
+									[
+										4139,
+										4148
+									],
+									[
+										4315,
+										4324
+									],
+									[
+										4491,
+										4500
+									],
+									[
+										4667,
+										4676
+									],
+									[
+										4843,
+										4852
+									],
+									[
+										5104,
+										5113
+									],
+									[
+										5400,
+										5418
+									],
+									[
+										5432,
+										5450
+									],
+									[
+										5612,
+										5630
+									],
+									[
+										5906,
+										5924
+									],
+									[
+										5941,
+										5959
+									],
+									[
+										5968,
+										5986
+									],
+									[
+										6072,
+										6090
+									],
+									[
+										6411,
+										6421
+									],
+									[
+										6525,
+										6535
+									],
+									[
+										6622,
+										6632
+									],
+									[
+										6653,
+										6663
+									],
+									[
+										6730,
+										6740
+									],
+									[
+										6940,
+										6950
+									],
+									[
+										7053,
+										7063
+									],
+									[
+										7090,
+										7100
+									],
+									[
+										7116,
+										7126
+									],
+									[
+										7143,
+										7153
+									],
+									[
+										7170,
+										7180
+									],
+									[
+										7220,
+										7230
+									],
+									[
+										7349,
+										7359
+									],
+									[
+										7537,
+										7547
+									],
+									[
+										7658,
+										7668
+									],
+									[
+										7862,
+										7872
+									],
+									[
+										8198,
+										8205
+									],
+									[
+										8459,
+										8466
+									],
+									[
+										8667,
+										8674
+									],
+									[
+										8926,
+										8933
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1405,
+								1405
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 20,
+							"color_helper.color_scheme": "Packages/User/SuperMonokai.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": null,
+								"current_syntax": "Default/Find Results",
+								"enabled": false,
+								"last_updated": 1498475401.35
+							},
+							"default_dir": "/home/simon/Desktop/testing/packages/grapher",
+							"detect_indentation": false,
+							"git_savvy.repo_path": "/home/simon/Desktop/testing/packages/grapher",
+							"line_numbers": false,
+							"output_tag": 4,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 500.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 267.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.show_commit_info":
+	{
+		"height": 130.0
+	},
+	"output.tooltips":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "",
+	"project": "grapher.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/KeymasterVue/KeymasterVue.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 357.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Request"
+			]
+		],
+		"width": 374.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 357.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

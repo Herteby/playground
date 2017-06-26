@@ -15,10 +15,13 @@ Test.addLinks({
 if(Meteor.isServer){
 	Test.expose()
 	Extra.expose()
+	Test.remove({})
+	Extra.remove({})
 	Meteor.setInterval(()=>{
-		Test.upsert(randInt(1,50),{$set:{color:'#' + randInt(256,4096).toString(16)}}) //Number as _id? Apparently okay, and doesn't get converted to String
-		Extra.upsert(randInt(1,50),{$set:{corners:randInt(0,1) ? 'rounded' : 'square'}})
+		Test.upsert(randInt(1,99),{$set:{color:'#' + randInt(256,4096).toString(16)}}) //Number as _id? Apparently okay, and doesn't get converted to String
+		Extra.upsert(randInt(1,99),{$set:{corners:randInt(0,1) ? 'rounded' : 'square'}})
 	},50)
+	//console.log(MongoInternals)
 }
 Meteor.methods({
 	select(id){
