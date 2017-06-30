@@ -2,7 +2,6 @@
 	<div>
 		<button @click="extra = !extra">Link {{extra ? 'on' : 'off'}}</button>
 		<button @click="subscribe = !subscribe">Subscription {{subscribe ? 'on' : 'off'}}</button>
-		<!--<button @click="onlyRound = !onlyRound">{{onlyRound ? 'Only rounded' : 'All types'}}</button>-->
 		<button @click="selected = !selected">{{selected ? 'Selected' : 'All'}}</button>
 		<button @click="onlyRound = !onlyRound">{{onlyRound ? 'Only rounded' : 'All types'}}</button>
 		<button @click="single = !single">{{single ? 'Single' : 'Multiple'}}</button>
@@ -18,9 +17,9 @@
 			<span v-if="onlyRound && !extra">(Link must be turned on to get corners)</span>
 		</h1>
 		<div class="list" v-else-if="!single">
-			<item v-for="item in stuff.data" :data="item" :key="item._id"/>
+			<item v-for="item in stuff.data" :item="item" :key="item._id"/>
 		</div>
-		<item v-else :data="stuff.data"/>
+		<item v-else :item="stuff.data"/>
 		Query:
 		<pre>{{query}}</pre>
 		Result:
@@ -45,8 +44,13 @@
 		grapher:{
 			stuff(){
 				let filters = {}
-				if(this.search){ filters.color = {$regex:this.search,$options:'i'} }
-				if(this.selected){ filters.selected = true }
+				if(this.search){
+					filters.color = {$regex:this.search,$options:'i'}
+				}
+				if(this.selected){
+					filters.selected = true
+				}
+				
 				let query = {
 					subscribe:this.subscribe,
 					single:this.single,

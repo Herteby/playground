@@ -30,6 +30,12 @@ export function createNodes(root) {
             return;
         }
 
+        // workaround, see https://github.com/cult-of-coders/grapher/issues/134
+        // TODO: find another way to do this
+        if (root.collection.default) {
+          root.collection = root.collection.default;
+        }
+
         // checking if it is a link.
         let linker = root.collection.getLinker(fieldName);
 

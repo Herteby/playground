@@ -2,41 +2,67 @@ html
 	font-family Arial
 head //Just testing weird CSS for fun
 	display block
-	background #222
+	background #345
 	color #fff
 	padding 20px
 	font-size 24px
-	*
+	title
 		display block 
 body
-	background #eee	
-	margin 20px
+	background #eee
+	margin 0
 input
 	padding 5px
 button
 	padding 5px 10px
 h1
 	font-weight normal
+.menu
+	background #345
+	padding 0 20px
+	a
+		color #fff
+		display inline-block
+		padding 10px 20px
+		cursor pointer
+		&:hover
+			color #5c8
+		&.active
+			background #eee
+			color #345
+			border-top-left-radius 4px
+			border-top-right-radius 4px
+.page
+	padding 20px
 .list
 	display flex
 	flex-wrap wrap
 	margin 10px 0
-.item
-	color #fff
-	text-shadow 0 0 1px #000
-	margin 5px
-	padding 10px 15px
-	flex-grow 1
-	border-radius 4px
-	font-family Monospace
-	box-shadow 0 1px 2px #666
-	cursor pointer
-	overflow hidden
-	white-space nowrap
-	max-width 100px
-	text-align center
-	transition background 1s, border-radius 2s
+	.item
+		color #fff
+		text-shadow 0 0 1px #000
+		margin 5px
+		padding 10px 15px
+		flex-grow 1
+		border-radius 4px
+		font-family Monospace
+		box-shadow 0 1px 2px #666
+		cursor pointer
+		overflow hidden
+		white-space nowrap
+		max-width 100px
+		text-align center
+		transition background 1s, border-radius 2s, transform 0.2s, opacity 0.2s
 pre
 	background #fff
 	border 1px solid #aaa
 	padding 10px
+.virtual-scroller
+	background #fff
+	border-collapse collapse
+	.item
+		height 40px
+		&:hover
+			background #afc
+	td
+		padding 10px

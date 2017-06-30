@@ -1,19 +1,20 @@
-//import {Minimongo} from 'meteor/minimongo'
 export default {
 	install(Vue, options){
 		Vue.mixin({
 			beforeCreate(){
 				this._grapher = {}
-			},
-			created(){
-				if(this.$options.grapher){
-					_.each(this.$options.grapher, (fn, name) => {
-						this.$data[name] = { //Initial "dummy result"
+				_.each(this.$options.grapher, (fn, name) => {
+						this[name] = { //Initial "dummy result"
 							ready:false,
 							readyOnce:false,
 							data:[]
 						}
 						Vue.util.defineReactive(this, name, null)
+				})
+			},
+			created(){
+				if(this.$options.grapher){
+					_.each(this.$options.grapher, (fn, name) => {
 						let computation
 						let readyOnce = false
 						let nonreactive
@@ -45,10 +46,6 @@ export default {
 									if(err){
 										console.err(err)
 									} else {
-										/*if(params.where){
-											let matcher = new Minimongo.Matcher(params.where)
-											data = _.filter(data, doc => matcher.documentMatches(doc).result)
-										}*/
 										if(params.single){
 											data = data[0]
 										}
@@ -73,6 +70,9 @@ export default {
 									this.$stopHandle(computation)
 								}
 								computation = this.$autorun(()=>{
+									if(!query.subscriptionHandle){
+										return
+									}									
 									let ready = query.subscriptionHandle.ready()
 									if(ready && !readyOnce){
 										readyOnce = true
@@ -81,10 +81,6 @@ export default {
 										time = new Date() - start
 									}
 									let data = query.fetch()
-									/*if(params.where){
-										let matcher = new Minimongo.Matcher(params.where)
-										data = _.filter(data, doc => matcher.documentMatches(doc).result)
-									}*/
 									if(params.single){
 										data = data[0]
 									}

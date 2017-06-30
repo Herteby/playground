@@ -4,8 +4,11 @@
 
 <script>
 	export default {
-		props:['data'],
+		props:['item'],
 		computed:{
+			data(){
+				return this.item.item || this.item
+			},
 			style(){
 				return {
 					background:this.data.color,
