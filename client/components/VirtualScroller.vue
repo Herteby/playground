@@ -121,8 +121,7 @@ export default {
   },
   watch: {
     items: {
-      handler (val) {
-        console.log('change',val)
+      handler () {
         this.updateVisibleItems(true)
       },
       deep: true

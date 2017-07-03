@@ -19,7 +19,9 @@
 		<div class="list" v-else-if="!single">
 			<item v-for="item in stuff.data" :item="item" :key="item._id"/>
 		</div>
-		<item v-else :item="stuff.data"/>
+		<div v-else class="list">
+			<item :item="stuff.data"/>
+		</div>
 		Query:
 		<pre>{{query}}</pre>
 		Result:

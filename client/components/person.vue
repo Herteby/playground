@@ -1,9 +1,9 @@
 <template>
 	<tr>
-		<td>{{itemIndex}}</td>
-		<td>{{item && item.name || '?'}}</td>
-		<td>{{item && item.job || '?'}}</td>
-		<td>{{item && item.city || '?'}}</td>
+		<td style="color:#888;width:50px;text-align:right">{{itemIndex}}</td>
+		<td>{{item && item.name}}</td>
+		<td>{{item && item.job}}</td>
+		<td>{{item && item.city}}</td>
 	</tr>
 </template>
 

@@ -1,5 +1,5 @@
 html
-	font-family Arial
+	font-family 'Open Sans', sans-serif
 head //Just testing weird CSS for fun
 	display block
 	background #345
@@ -30,8 +30,8 @@ h1
 		&.active
 			background #eee
 			color #345
-			border-top-left-radius 4px
-			border-top-right-radius 4px
+			border-top-left-radius 2px
+			border-top-right-radius 2px
 .page
 	padding 20px
 .list
@@ -62,6 +62,8 @@ pre
 	border-collapse collapse
 	.item
 		height 40px
+		&:nth-child(odd)
+			background #eee
 		&:hover
 			background #afc
 	td

@@ -20,6 +20,11 @@ if(Meteor.isServer){
 	Extra.expose()
 	People.expose()
 	People._ensureIndex({name: 1})
+	People._ensureIndex({
+		name: 'text',
+		city: 'text',
+		job: 'text'
+	})
 	
 	Meteor.setInterval(()=>{
 		Test.upsert(randInt(1,99),{$set:{color:'#' + randInt(256,4096).toString(16)}}) //Number as _id? Apparently okay, and doesn't get converted to String
