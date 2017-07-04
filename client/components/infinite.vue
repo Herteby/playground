@@ -1,35 +1,41 @@
 <template>
 	<div>
-		<input v-model="search" placeholder="Search">
+		<input v-model="search" placeholder="Search"> Count: {{fullCount}}
 		<h1 v-if="!people.count">No results for "{{search}}"</h1>
-		<virtual-scroller v-else pageMode contentTag="table" :items="stuff" :renderers="renderers" :keyField="false" itemHeight="40" @update="indexes = $event"></virtual-scroller>
+		<virtual-scroller v-else pageMode contentTag="table" :items="buffer" :renderers="renderers" :keyField="false" itemHeight="40" @update="indexes = $event"></virtual-scroller>
 	</div>
 </template>
 
 <script>
 	import Person from './person.vue'
 	export default {
+		label:'infinite',
 		data(){
 			return {
 				indexes:{},
 				renderers:{
 					default:Person
 				},
-				stuff:new Array(50000),
-				search:''
+				buffer:[],
+				search:'',
+				fullCount:undefined
 			}
 		},
 		watch:{
-			people: {
+			people:{
 				handler(result){
+					console.log(result)
 					if(result.ready){
 						for(let i = 0; i <= this.indexes.endIndex - this.indexes.startIndex; i++){
-							this.stuff.splice(i + this.indexes.startIndex, 1, result.data[i])
+							this.buffer.splice(i + this.indexes.startIndex, 1, result.data[i])
 						}
-						console.log('people loaded:',_.filter(this.stuff, person => person && person.name).length)
+						console.log('people loaded:',_.filter(this.buffer, person => person && person.name).length)
 					}
-				},
-				deep:true
+					if(result.fullCount !== false){
+						this.fullCount = result.fullCount
+						this.buffer.splice(result.fullCount)
+					}
+				},deep:true
 			}
 		},
 		grapher:{
@@ -55,7 +61,8 @@
 							skip:this.indexes.startIndex,
 							limit:this.indexes.endIndex ? this.indexes.endIndex - this.indexes.startIndex : 1
 						}
-					}
+					},
+					fullCount:true
 				}
 			}
 		}

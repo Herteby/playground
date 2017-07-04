@@ -3,15 +3,6 @@ import faker from 'faker'
 function randInt (min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min
 }
-let log = console.log
-console.log = function(...args){
-	_.each(args, (arg, key) => {
-		if(typeof arg == 'function'){
-			args[key] = arg.toString()
-		}
-		log(...args)
-	})
-}
 Test = new Mongo.Collection('test')
 Extra = new Mongo.Collection('test2')
 People = new Mongo.Collection('people')

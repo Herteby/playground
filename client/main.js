@@ -15,7 +15,7 @@ new Vue({
 	el: '#app',
 	render: h => h('layout')
 })
-
+Session = new Vue()
 //Testing if Vue components can be used in <head>. Turns out they can :D
 new Vue({
 	el:'title',

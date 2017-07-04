@@ -56,6 +56,7 @@
 				let query = {
 					subscribe:this.subscribe,
 					single:this.single,
+					fullCount:true,
 					collection:Test,
 					query:{
 						_id:1,
