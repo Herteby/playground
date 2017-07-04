@@ -2,3 +2,5 @@ node_modules/
 .meteor/local
 .meteor/.
 *.sublime*
+/.meteor/versions
+/.meteor/.finished-upgraders

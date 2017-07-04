@@ -3,7 +3,15 @@ import faker from 'faker'
 function randInt (min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min
 }
-
+let log = console.log
+console.log = function(...args){
+	_.each(args, (arg, key) => {
+		if(typeof arg == 'function'){
+			args[key] = arg.toString()
+		}
+		log(...args)
+	})
+}
 Test = new Mongo.Collection('test')
 Extra = new Mongo.Collection('test2')
 People = new Mongo.Collection('people')
@@ -19,12 +27,13 @@ if(Meteor.isServer){
 	Test.expose()
 	Extra.expose()
 	People.expose()
-	People._ensureIndex({name: 1})
 	People._ensureIndex({
-		name: 'text',
-		city: 'text',
-		job: 'text'
+		name: 1,
+		job: 1,
+		city: 1
 	})
+	console.log(People._collection._ensureIndex)
+	
 	
 	Meteor.setInterval(()=>{
 		Test.upsert(randInt(1,99),{$set:{color:'#' + randInt(256,4096).toString(16)}}) //Number as _id? Apparently okay, and doesn't get converted to String

@@ -23,12 +23,3 @@ new Vue({
 		return    h('title','Meteor + Grapher + Vue')
 	}
 })
-/*let log = console.log
-console.log = function(...args){
-	_.each(args, (arg, key) => {
-		if(typeof arg == 'function'){
-			args[key] = arg.toString()
-		}
-		log(...args)
-	})
-}*/

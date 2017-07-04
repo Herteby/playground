@@ -1,9 +1,11 @@
 <template>
 	<tr>
-		<td style="color:#888;width:50px;text-align:right">{{itemIndex}}</td>
-		<td>{{item && item.name}}</td>
-		<td>{{item && item.job}}</td>
-		<td>{{item && item.city}}</td>
+		<template v-if="item">
+			<td style="color:#888;width:50px">{{itemIndex}}</td>
+			<td v-html="match(item.name, search)"></td>
+			<td v-html="match(item.job, search)"></td>
+			<td v-html="match(item.city, search)"></td>
+		</template>
 	</tr>
 </template>
 
@@ -14,9 +16,18 @@
 			return {selected:true}
 		},
 		computed:{
-			name(){
-				return this.item.firstName + ' ' + this.item.lastName 
+			search(){
+				return this.$parent.$parent.search
 			}
-		}		
+		},
+		methods:{
+			match(string, search){
+				if(search){
+					return string.replace(new RegExp(search,'ig'), '<span class="match">$&</span>')
+				} else {
+					return string
+				}
+			}
+		}
 	}
 </script>

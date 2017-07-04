@@ -37,10 +37,11 @@
 				console.log(this.indexes.startIndex,this.indexes.endIndex)
 				let filters = {}
 				if(this.search){
-					filters.$text = {
-						$search:this.search,
-						$fields:['job','city','name']
-					}
+					filters.$or = [
+						{name:{$regex:this.search, $options:'i'}},
+						{job:{$regex:this.search, $options:'i'}},
+						{city:{$regex:this.search, $options:'i'}}
+					]
 				}
 				return {
 					collection:People,
