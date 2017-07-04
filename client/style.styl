@@ -67,12 +67,40 @@ pre
 	margin-top 10px
 	.item
 		height 40px
-		&:nth-child(odd)
+		&.odd
 			background #eee
 		&:hover
 			background #afc
 	td
-		padding 10px
+		padding 0 10px
+		&.ready
+			animation fadeIn 0.4s
 .match
 	background #afc
 	border-radius 4px
+.loading
+	position fixed
+	z-index 100
+	bottom 10px
+	left 10px
+	background #5c8
+	border-radius 99px
+	padding 10px 20px
+	color #fff
+	transition 0.4s
+	&.ready
+		opacity 0
+		transition 1s
+.subscribeCount
+	position fixed
+	z-index 100
+	top 10px
+	right 10px
+	background #5c8
+	border-radius 99px
+	padding 10px 20px
+	color #fff
+
+@keyframes fadeIn
+	0%
+		color #eee //animating opacity causes some problems in tables

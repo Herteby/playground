@@ -1,11 +1,9 @@
 <template>
-	<tr>
-		<template v-if="item">
-			<td style="color:#888;width:50px">{{itemIndex}}</td>
-			<td v-html="match(item.name, search)"></td>
-			<td v-html="match(item.job, search)"></td>
-			<td v-html="match(item.city, search)"></td>
-		</template>
+	<tr :class="{odd:itemIndex % 2}"> <!-- CSS nth-child does not work with virtual-scroll -->
+		<td style="color:#888;width:50px">{{itemIndex + 1}}</td>
+		<td :class="{ready:!!item}" v-html="item && match(item.name, search) || ''"></td>
+		<td :class="{ready:!!item}" v-html="item && match(item.job, search) || ''"></td>
+		<td :class="{ready:!!item}" v-html="item && match(item.city, search) || ''"></td>
 	</tr>
 </template>
 
