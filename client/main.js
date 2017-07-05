@@ -7,6 +7,7 @@ Vue.use(GrapherVue)
 import 'vue-clicky'
 //import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 
+Vue.prototype.$global = window
 Vue.prototype._ = _ //add Underscore to Vue
 Vue.prototype.Meteor = Meteor
 
@@ -23,3 +24,13 @@ new Vue({
 		return    h('title','Meteor + Grapher + Vue')
 	}
 })
+log = function log(...args){
+	let clones = _.map(args, _.clone)
+	_.each(clones, arg => {
+		if(typeof arg == 'function'){
+			arg = arg.toString()
+		}
+	})
+	console.log('%c' + (log.caller ? log.caller.name : 'unknown'), 'color:#fff;font-weight:bold;background:#08f;border-radius:10px;padding:0 5px',...clones)
+	return args[0]
+}

@@ -1,16 +1,21 @@
+vueGreen = #4fc08d
+vueBlue = #345
 html
 	font-family 'Open Sans', sans-serif
-head //Just testing weird CSS for fun
+header
 	display block
-	background #345
-	color #fff
-	padding 20px
-	font-size 24px
-	title
-		display block 
+	background linear-gradient(135deg, vueBlue 0%, vueBlue 50%, vueGreen 50%, vueGreen 100%)
+	padding 20px 20px 0 20px
+	.logo
+		color #fff
+		display inline-block 
+		font-weight 800
+		font-size 42px
+		margin-bottom 20px
 body
 	background #eee
 	margin 0
+	overflow-y scroll
 input
 	padding 5px
 	font-size 16px
@@ -21,22 +26,21 @@ h1
 	font-weight normal
 table
 	border-collapse collapse
-.menu
-	background #345
-	padding 0 20px
+nav
 	a
-		color #fff
+		font-weight 600
+		color vueGreen
 		display inline-block
 		padding 10px 20px
 		cursor pointer
+		border-top-left-radius 2px
+		border-top-right-radius 2px
 		&:hover
-			color #5c8
+			background tint(vueBlue,10%)
 		&.active
 			background #eee
-			color #345
-			border-top-left-radius 2px
-			border-top-right-radius 2px
-.page
+			color vueBlue	
+main
 	padding 20px
 .list
 	display flex
@@ -61,46 +65,77 @@ pre
 	background #fff
 	border 1px solid #aaa
 	padding 10px
+.tableHead
+	background vueGreen
+	color vueBlue
+	font-weight 600
+	padding 10px 10px 0px 10px
+	user-select none
+	cursor default
+	input
+		border none
+		font-size 20px
+	.fields
+		display flex
+		div
+			padding 10px
+			flex-grow 1
+			&.sortable
+				&:hover
+					cursor pointer
+					background tint(vueGreen,20%)
 .virtual-scroller
 	background #fff
 	padding 10px
-	margin-top 10px
 	.item
 		height 40px
 		&.odd
 			background #eee
 		&:hover
-			background #afc
+			background alpha(vueGreen,50%)
 	td
 		padding 0 10px
 		&.ready
 			animation fadeIn 0.4s
 .match
-	background #afc
+	background alpha(vueGreen,50%)
 	border-radius 4px
-.loading
+.notifications
 	position fixed
-	z-index 100
-	bottom 10px
-	left 10px
-	background #5c8
-	border-radius 99px
-	padding 10px 20px
-	color #fff
-	transition 0.4s
-	&.ready
-		opacity 0
-		transition 1s
-.subscribeCount
-	position fixed
+	display flex
 	z-index 100
 	top 10px
 	right 10px
-	background #5c8
-	border-radius 99px
-	padding 10px 20px
-	color #fff
+	div
+		background vueGreen
+		border-radius 99px
+		padding 10px 20px
+		color #fff
+		margin-left 10px
+	.loading
+		transition 0.4s
+		&.ready
+			opacity 0
 
 @keyframes fadeIn
 	0%
 		color #eee //animating opacity causes some problems in tables
+	
+@media (max-width 1000px)
+	.page
+		padding 10px 0px
+	.virtual-scroller
+		padding 0px
+		font-size 14px
+		td
+			padding 5px
+
+//css from VirtualScroller
+.virtual-scroller:not(.page-mode)
+  overflow-y auto
+.item-container
+	box-sizing border-box
+	width 100%
+	overflow hidden
+.items 
+	width 100%
