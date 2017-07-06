@@ -1,11 +1,11 @@
 <template>
 <div>
 	<header>
-		<div class="logo">Meteor + Grapher + Vue</div class="logo">
-		<nav>
-			<a @click="page = 'test'" :class="{active:page == 'test'}">Color boxes</a>
-			<a @click="page = 'infinite'" :class="{active:page == 'infinite'}">Infinite scroll</a>
-		</nav>
+		<a class="logo" href="https://github.com/Herteby/testing">Meteor + Grapher + Vue</a class="logo">
+		<div class="menu">
+			<div @click="page = 'test'" :class="{active:page == 'test'}">Random colors</div>
+			<div @click="page = 'infinite'" :class="{active:page == 'infinite'}">Infinite scroll</div>
+		</div class="menu">
 	</header>
 	<main>
 		<virtual-table v-if="page == 'infinite'" :fields="fields" :filters="filters" :renderers="{default:'person'}" :collection="$global.People"></virtual-table>

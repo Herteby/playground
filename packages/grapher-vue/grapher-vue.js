@@ -114,7 +114,7 @@ export default {
 
 							if(params.fullCount){
 								query.getCount((err, count) => {
-									this[name].fullCount = count
+									this.$set(this[name], 'fullCount', count)
 								})
 							}
 						},{immediate:true})

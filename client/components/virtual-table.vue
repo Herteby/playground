@@ -1,7 +1,7 @@
 <template>
 <div>
-	<div class="notifications">
-		<div :class="{loading:true,ready:items.ready}">Loading . . .</div>
+	<div :class="'notifications'">
+		<div v-if="!items.ready" class="loading">Loading...</div>
 		<div class="subscribeCount">Subscribing to {{indexes.end - indexes.start}} items</div>
 	</div>
 	<div class="tableHead">
@@ -9,47 +9,48 @@
 		<label class="filter" v-for="filter in savedFilters"><input type="checkbox" v-model="filter.enabled">{{filter.display}}</label>
 		<div class="count">Results: {{typeof fullCount == 'number' ? fullCount.toLocaleString() : fullCount}}</div>
 		<div class="fields">
-			<div v-for="field, key in savedFields" :key="key" :class="{sortable:field.sort !== false}"@click="changeSort(key)">
+			<div v-for="field, key in savedFields" :key="key" :class="{sortable:field.sort !== false}" @click="changeSort(key)">
 				{{field.display}}
 				<span v-if="field.sort === 1">▼</span>
 				<span v-else-if="field.sort === -1">▲</span>
 			</div>
 		</div>
 	</div>
-	<h1 v-if="!items.readyOnce">Loading...</h1>
-	<template v-else-if="!items.count">
-		<h1 v-if="items.ready">No results for "{{search}}"</h1>
-		<h1 v-else="!items.count">Loading...</h1>
-	</template>
-	<virtual-scroller v-else pageMode contentTag="table" :items="buffer" :renderers="renderers" :keyField="false" itemHeight="40" @update="update"></virtual-scroller>
+	<virtual-scroller v-if="items.readyOnce && items.count" pageMode contentTag="table" :items="buffer" :renderers="renderers" :keyField="false" itemHeight="40" @update="update"></virtual-scroller>
+	<h1 v-else-if="items.ready">No results for "{{search}}"</h1>
+	<h1 v-else>Loading...</h1>
 </div>
 </template>
 
 <script>
 export default {
-	props: {
-		collection: {
-			type: Mongo.Collection,
+	props:{
+		collection:{
+			type:Mongo.Collection,
 			required: true
 		},
-		fields: {
-			type: Object,
-			required: true,
+		fields:{
+			type:Object,
+			required:true,
 		},
-		filters: {
-			type: Array
+		filters:{
+			type:Array
 		},
 		renderers:{
-			type: Object,
-			required: true
+			type:Object,
+			required:true
 		},
-		showSearch: {
-			type: Boolean,
-			default: true
+		showSearch:{
+			type:Boolean,
+			default:true
 		},
-		sort2: {
-			type: String,
-			default: '_id'
+		sort2:{
+			type:String,
+			default:'_id'
+		},
+		minimum:{
+			type:Number,
+			default:40
 		}
 	},
 	data(){
@@ -58,7 +59,10 @@ export default {
 			savedFields:_.clone(this.fields),
 			filter:true,
 			showQuery:false,
-			indexes:{},
+			indexes:{
+				start:0,
+				end:this.minimum
+			},
 			buffer:[],
 			search:'',
 			fullCount:undefined
@@ -73,7 +77,7 @@ export default {
 						this.buffer = new Array(items.fullCount)
 					}
 					for(let i = 0; i <= this.indexes.end - this.indexes.start && i < items.data.length; i++){
-						this.buffer.splice(i + this.indexes.start, 1, items.data[i])
+						set(this.buffer, i + this.indexes.start, items.data[i])
 					}
 				}
 			},deep:true
@@ -86,30 +90,35 @@ export default {
 				start: Math.floor(indexes.startIndex / chunkSize) * chunkSize,
 				end: Math.ceil(indexes.endIndex / chunkSize) * chunkSize + chunkSize
 			}
+			if(indexes.end < this.minimum)
+				indexes.end = this.minimum
 			if(this.indexes.start !== indexes.start || this.indexes.end !== indexes.end){
 				this.indexes = indexes
 			}
 		},500),
+		changeSort(key){
+			let field = this.savedFields[key]
+			if(_.isNumber(field.sort)){
+				set(field, 'sort', 0 - field.sort)
+			} else if(field.sort !== false){
+				_.each(this.savedFields, sibling => {
+					if(sibling.sort !== false)
+						set(sibling, 'sort', null)
+				})
+				set(field, 'sort', 1)
+			}
+			console.log(_.clone(this.savedFields))
+		},
 		match(string){
 			if(this.search){
 				return string.replace(new RegExp(this.search,'ig'), '<span class="match">$&</span>')
 			} else {
 				return string
 			}
-		},
-		changeSort(key){
-			let field = this.savedFields[key]
-			if(_.isNumber(field.sort)){
-				field.sort = 0 - field.sort
-			} else if(field.sort !== false){
-				_.each(this.savedFields, sibling => {
-					if(sibling.sort !== false)
-						sibling.sort = null
-				})
-				Vue.set(field, 'sort', 1)
-			}
-			console.log(_.clone(this.savedFields))
 		}
+	},
+	provide(){
+		return {match:this.match}
 	},
 	grapher:{
 		items(){

@@ -10,13 +10,9 @@
 <script>
 export default {
 	props:['item','item-index'],
+	inject:['match'],
 	data(){
 		return {selected:true}
-	},
-	methods:{
-		match(val){
-			return this.$parent.$parent.match(val)
-		}
 	}
 }
 </script>

@@ -1,20 +1,22 @@
 <template>
 <div>
-	<button @click="extra = !extra">Link {{extra ? 'on' : 'off'}}</button>
-	<button @click="subscribe = !subscribe">Subscription {{subscribe ? 'on' : 'off'}}</button>
-	<button @click="selected = !selected">{{selected ? 'Selected' : 'All'}}</button>
-	<button @click="onlyRound = !onlyRound">{{onlyRound ? 'Only rounded' : 'All types'}}</button>
-	<button @click="single = !single">{{single ? 'Single' : 'Multiple'}}</button>
-	<template v-if="!single">Limit: <input type="number" v-model.number="limit" min="1" max="99"></template>
-	Search: <input type="text" v-model="search">
-	<button @click="search = ''">Clear</button>
-	<button @click="search = '[a-f][0-9][0-9]'">Reddish</button>
-	<button @click="search = '[0-9][a-f][0-9]'">Greenish</button>
-	<button @click="search = '[0-9][0-9][a-f]'">Bluish</button>
+	<div class="controls">
+		<label><input type="checkbox" v-model="link">Link</label>
+		<label><input type="checkbox" v-model="subscribe">Subscribe</label>
+		<label><input type="checkbox" v-model="selected">Only selected</label>
+		<label><input type="checkbox" v-model="onlyRound">Only rounded</label>
+		<label><input type="checkbox" v-model="single">Single result</label>
+		<div v-if="!single">Limit: <input type="number" v-model.number="limit" min="1" max="99"></div>
+		<input type="text" v-model="search" placeholder="Search" style="width:100px">
+		<button @click="search = ''">Clear</button>
+		<button @click="search = '[a-f][0-9][0-9]'">Reddish</button>
+		<button @click="search = '[0-9][a-f][0-9]'">Greenish</button>
+		<button @click="search = '[0-9][0-9][a-f]'">Bluish</button>
+	</div>
 	<h1 v-if="!stuff.readyOnce">Loading...</h1>
 	<h1 v-else-if="stuff.count == 0">No results 
 		<span v-if="selected">(Click items to select them)</span>
-		<span v-if="onlyRound && !extra">(Link must be turned on to get corners)</span>
+		<span v-if="onlyRound && !link">(Link must be turned on to get corners)</span>
 	</h1>
 	<div class="list" v-else-if="!single">
 		<color v-for="item in stuff.data" :item="item" :key="item._id"/>
@@ -34,7 +36,7 @@ export default {
 	data(){
 		return {
 			limit:30,
-			extra:true,
+			link:true,
 			subscribe:true,
 			single:false,
 			onlyRound:false,
@@ -45,38 +47,43 @@ export default {
 	},
 	grapher:{
 		stuff(){
-			let filters = {}
-			if(this.search){
-				filters.color = {$regex:this.search,$options:'i'}
-			}
-			if(this.selected){
-				filters.selected = true
-			}
-			
-			let query = {
-				subscribe:this.subscribe,
-				single:this.single,
+			let args = {
 				collection:Test,
 				query:{
 					_id:1,
 					color:1,
-					selected:1,
-					extra:this.extra && {
-						corners:1
-					},
-					$filters:filters,
-					$options:!this.onlyRound && {limit:this.limit,sort:{_id:1}},//if postFilters are used, limit will count incorrectly unless it's placed in postOptions
-					$postFilters:this.onlyRound && {'extra.corners':'rounded'}, //this filter requires data from a linked collection, so it must be a postFilter
-					$postOptions:this.onlyRound && {limit:this.limit,sort:{_id:1}}//postOptions has worse performance, and should only be used if necessary
+					selected:1
 				}
+			}
+			//this may seem like a lot of pointless code. I'm just doing it like this to make the json display look cleaner
+			if(!this.subscribe)
+				args.subscribe = false
+			if(this.single)
+				args.single = true
+
+			let query = args.query
+			if(this.link)
+				query.extra = {corners:1}
+			if(this.search || this.selected){
+				query.$filters = {}
+				if(this.search)
+					query.$filters.color = {$regex:this.search,$options:'i'}
+				if(this.selected)
+					query.$filters.selected = true
+			}
+			if(this.onlyRound){
+				query.$postFilters = {'extra.corners':'rounded'} //this filter requires data from a linked collection, so it must be a postFilter
+				query.$postOptions = {limit:this.limit,sort:{_id:1}} //if postFilters are used, limit will count incorrectly unless it's placed in postOptions
+			} else {
+				query.$options = {limit:this.limit,sort:{_id:1}}
 			}
 
 			//Create the JSON display
-			let display = _.clone(query)
+			let display = _.clone(args)
 			display.collection = display.collection._name
-			this.query = Object.freeze(display)
+			this.query = display
 
-			return query
+			return args
 		}
 	}
 }

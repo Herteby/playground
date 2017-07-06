@@ -142,4 +142,4 @@ Vue.use(GrapherVue)
 </table>
 
 ## Demo
-[Check out my testing repo](https://github.com/Herteby/testing). It's a Meteor project that uses Grapher, Vue and virtual-scroll to do some cool stuff.
+There's a live demo [here](https://dev.herte.by/), or you can [clone my testing repo](https://github.com/Herteby/testing).

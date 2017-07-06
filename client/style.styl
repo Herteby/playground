@@ -25,12 +25,24 @@ input
 button
 	padding 5px 10px
 	font-size 16px
+input[type=checkbox]
+	width 20px
+	height 20px
+label
+	display flex
+	cursor pointer
+a
+	text-decoration none
+	&:hover
+		text-decoration underline
 h1
 	font-weight normal
 table
 	border-collapse collapse
-nav
-	a
+main
+	padding 20px
+.menu
+	div
 		font-weight 600
 		color white
 		display inline-block
@@ -43,8 +55,12 @@ nav
 		&.active
 			background #eee
 			color vueBlue	
-main
-	padding 20px
+.controls
+	display flex
+	> *
+		margin-left 10px
+	button
+		margin 0
 .list
 	display flex
 	margin 10px 0
@@ -82,14 +98,7 @@ pre
 		margin-left auto
 	.filter
 		display flex
-		
 		padding 0px 10px
-		&:hover
-			cursor pointer
-			color lighten(vueBlue,20%)
-		input
-			width 20px
-			height 20px
 	.fields
 		width 100%
 		display flex
@@ -129,10 +138,6 @@ pre
 		padding 10px 20px
 		color white
 		margin-left 10px
-	.loading
-		transition 0.4s
-		&.ready
-			opacity 0
 
 @keyframes fadeIn
 	0%
