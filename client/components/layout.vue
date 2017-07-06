@@ -36,12 +36,18 @@ export default {
 				city:{
 					display:'City',
 					search:true
-				}
+				},
+				emoji:{}
 			},
 			filters:[
 				{
-					display:'Only show developers',
+					display:'Only developers',
 					filter:{job:{$regex:'developer',$options:'i'}},
+					enabled:false
+				},
+				{
+					display:'Only people with emoji',
+					filter:{emoji:{$exists:true}},
 					enabled:false
 				}
 			]

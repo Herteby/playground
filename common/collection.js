@@ -39,11 +39,23 @@ if(Meteor.isServer){
 		})
 	}
 }
+let emojis = ['🤷','😂','❤','😍','😊','🤔','🔥','😘','🙄']
 Meteor.methods({
 	select(id){
 		let item = Test.findOne(id)
 		if(item){
 			Test.update(item._id,{$set:{selected:!item.selected}})
+		}
+	},
+	emojify(id){
+		let person = People.findOne(id)
+		if(person){
+			if(person.emoji){
+				People.update(person._id,{$unset:{emoji:true}})
+			} else {
+				let emoji = emojis[randInt(0,emojis.length - 1)]
+				People.update(person._id,{$set:{emoji}})
+			}
 		}
 	}
 })

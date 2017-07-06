@@ -9,7 +9,7 @@
 		<label class="filter" v-for="filter in savedFilters"><input type="checkbox" v-model="filter.enabled">{{filter.display}}</label>
 		<div class="count">Results: {{typeof fullCount == 'number' ? fullCount.toLocaleString() : fullCount}}</div>
 		<div class="fields">
-			<div v-for="field, key in savedFields" :key="key" :class="{sortable:field.sort !== false}" @click="changeSort(key)">
+			<div v-for="field, key in savedFields" v-if="field.display" :key="key" :class="{sortable:field.sort !== false}" @click="changeSort(key)">
 				{{field.display}}
 				<span v-if="field.sort === 1">▼</span>
 				<span v-else-if="field.sort === -1">▲</span>
