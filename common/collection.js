@@ -1,6 +1,6 @@
 import faker from 'faker'
 
-function randInt (min, max) {
+randInt = (min, max) => {
 	return Math.floor(Math.random() * (max - min + 1)) + min
 }
 Test = new Mongo.Collection('test')
