@@ -39,7 +39,7 @@ if(Meteor.isServer){
 		})
 	}
 }
-Emojis = ['🤷','😂','❤','😍','😊','🤔','🔥','😘','🙄']
+Emojis = '🤷😂❤😍😊🤔🔥😘🙄😀👹💩💀👾😻😺😸🖕🤘🖖👍👎🚀🌠☄️🌟✨'
 Meteor.methods({
 	select(id){
 		let item = Test.findOne(id)
@@ -52,7 +52,7 @@ Meteor.methods({
 		if(person){
 			if(person.emoji){
 				People.update(person._id,{$unset:{emoji:true}})
-			} else if(n < emojis.length) {
+			} else if(n < Emojis.length) {
 				People.update(person._id, {$set:{emoji:Emojis[n]}})
 			}
 		}
