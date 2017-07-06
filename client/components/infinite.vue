@@ -4,7 +4,6 @@
 		<div :class="{loading:true,ready:people.ready}">Loading . . .</div>
 		<div class="subscribeCount">Subscribing to {{indexes.end - indexes.start}} items</div>
 	</div>
-	<button v-else @click="showQuery = true">Show query</button>
 	<div class="tableHead">
 		<input v-if="showSearch" v-model="search" placeholder="Search"> Results: {{typeof fullCount == 'number' ? fullCount.toLocaleString() : fullCount}}
 		<div class="fields">
@@ -78,7 +77,6 @@ export default {
 			if(this.indexes.start !== indexes.start || this.indexes.end !== indexes.end){
 				this.indexes = indexes
 			}
-			//console.log(this.indexes.start,this.indexes.end)
 		},500),
 		match(string){
 			if(this.search){
@@ -95,7 +93,6 @@ export default {
 			} else if(typeof field.sort == 'number'){
 				field.sort = 0 - field.sort
 			}
-			log(field)
 		}
 	},
 	grapher:{
@@ -104,11 +101,9 @@ export default {
 			let sort = {}
 			_.each(this.fields, (field, key) => {
 				fields[key] = 1
-				console.log(_.clone(field))
 				if(typeof field.sort == 'number')
 					sort[key] = field.sort
 			})
-			console.log(sort)
 
 			let filters = {}
 			if(this.search){

@@ -17,10 +17,10 @@
 		<span v-if="onlyRound && !extra">(Link must be turned on to get corners)</span>
 	</h1>
 	<div class="list" v-else-if="!single">
-		<item v-for="item in stuff.data" :item="item" :key="item._id"/>
+		<color v-for="item in stuff.data" :item="item" :key="item._id"/>
 	</div>
 	<div v-else class="list">
-		<item :item="stuff.data"/>
+		<color :item="stuff.data"/>
 	</div>
 	Query:
 	<pre>{{query}}</pre>

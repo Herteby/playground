@@ -1,18 +1,19 @@
 vueGreen = #4fc08d
 vueBlue = #345
-html
-	font-family 'Open Sans', sans-serif
+
 header
 	display block
 	background linear-gradient(135deg, vueBlue 0%, vueBlue 50%, vueGreen 50%, vueGreen 100%)
 	padding 20px 20px 0 20px
 	.logo
-		color #fff
+		color white
 		display inline-block 
 		font-weight 800
-		font-size 42px
+		font-size 2.6em
 		margin-bottom 20px
 body
+	font-family 'Open Sans', sans-serif
+	font-size 16px
 	background #eee
 	margin 0
 	overflow-y scroll
@@ -29,7 +30,7 @@ table
 nav
 	a
 		font-weight 600
-		color vueGreen
+		color white
 		display inline-block
 		padding 10px 20px
 		cursor pointer
@@ -47,7 +48,7 @@ main
 	flex-wrap wrap
 	margin 10px 0
 	.item
-		color #fff
+		color white
 		text-shadow 0 0 1px #000
 		margin 5px
 		padding 10px 15px
@@ -62,7 +63,7 @@ main
 		text-align center
 		transition background 1s, border-radius 2s, transform 0.2s, opacity 0.2s
 pre
-	background #fff
+	background white
 	border 1px solid #aaa
 	padding 10px
 .tableHead
@@ -70,13 +71,12 @@ pre
 	color vueBlue
 	font-weight 600
 	padding 10px 10px 0px 10px
-	user-select none
-	cursor default
 	input
 		border none
 		font-size 20px
 	.fields
 		display flex
+		user-select none
 		div
 			padding 10px
 			flex-grow 1
@@ -85,7 +85,7 @@ pre
 					cursor pointer
 					background tint(vueGreen,20%)
 .virtual-scroller
-	background #fff
+	background white
 	padding 10px
 	.item
 		height 40px
@@ -110,7 +110,7 @@ pre
 		background vueGreen
 		border-radius 99px
 		padding 10px 20px
-		color #fff
+		color white
 		margin-left 10px
 	.loading
 		transition 0.4s
@@ -122,13 +122,17 @@ pre
 		color #eee //animating opacity causes some problems in tables
 	
 @media (max-width 1000px)
-	.page
-		padding 10px 0px
+	body
+		font-size 14px
+	main
+		padding 20px 0px
 	.virtual-scroller
 		padding 0px
 		font-size 14px
 		td
 			padding 5px
+	.notifications div
+		padding 5px 10px
 
 //css from VirtualScroller
 .virtual-scroller:not(.page-mode)
