@@ -13,8 +13,8 @@ export default {
 	inject:['match'],
 	methods:{
 		emojify(item){
-			if(item && item._id)
-				Meteor.call('emojify',item._id)
+			if(item)
+				Meteor.call('emojify', item._id, randInt(0,Emojis.length - 1))
 		}
 	}
 }
