@@ -1,6 +1,6 @@
 //import 'loggy'
 import 'vue-clicky'
-import Vue from 'vue'
+Vue = require('vue')
 
 import VueMeteorTracker from 'vue-meteor-tracker'
 Vue.use(VueMeteorTracker)

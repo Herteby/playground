@@ -294,3 +294,17 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.virtual-scroller:not(.page-mode) {
+  overflow-y: auto;
+}
+.item-container {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+.items {
+  width: 100%;
+}
+</style>

@@ -1,26 +1,28 @@
 <template>
-<section>
+<div>
 	<div class="notifications">
-		<div :class="{loading:true,ready:people.ready}">Loading . . .</div>
+		<div :class="{loading:true,ready:items.ready}">Loading . . .</div>
 		<div class="subscribeCount">Subscribing to {{indexes.end - indexes.start}} items</div>
 	</div>
 	<div class="tableHead">
-		<input v-if="showSearch" v-model="search" placeholder="Search"> Results: {{typeof fullCount == 'number' ? fullCount.toLocaleString() : fullCount}}
+		<input class="search" v-if="showSearch" v-model="search" placeholder="Search">
+		<label class="filter" v-for="filter in savedFilters"><input type="checkbox" v-model="filter.enabled">{{filter.display}}</label>
+		<div class="count">Results: {{typeof fullCount == 'number' ? fullCount.toLocaleString() : fullCount}}</div>
 		<div class="fields">
-			<div v-for="field, key in fields" :key="key" :class="{sortable:field.sort !== undefined}"@click="changeSort(key)">
-				{{field.name}}
+			<div v-for="field, key in savedFields" :key="key" :class="{sortable:field.sort !== false}"@click="changeSort(key)">
+				{{field.display}}
 				<span v-if="field.sort === 1">▼</span>
 				<span v-else-if="field.sort === -1">▲</span>
 			</div>
 		</div>
 	</div>
-	<h1 v-if="!people.readyOnce">Loading...</h1>
-	<template v-else-if="!people.count">
-		<h1 v-if="people.ready">No results for "{{search}}"</h1>
-		<h1 v-else="!people.count">Loading...</h1>
+	<h1 v-if="!items.readyOnce">Loading...</h1>
+	<template v-else-if="!items.count">
+		<h1 v-if="items.ready">No results for "{{search}}"</h1>
+		<h1 v-else="!items.count">Loading...</h1>
 	</template>
 	<virtual-scroller v-else pageMode contentTag="table" :items="buffer" :renderers="renderers" :keyField="false" itemHeight="40" @update="update"></virtual-scroller>
-</section>
+</div>
 </template>
 
 <script>
@@ -34,6 +36,9 @@ export default {
 			type: Object,
 			required: true,
 		},
+		filters: {
+			type: Array
+		},
 		renderers:{
 			type: Object,
 			required: true
@@ -41,10 +46,17 @@ export default {
 		showSearch: {
 			type: Boolean,
 			default: true
+		},
+		sort2: {
+			type: String,
+			default: '_id'
 		}
 	},
 	data(){
 		return {
+			savedFilters:_.clone(this.filters),
+			savedFields:_.clone(this.fields),
+			filter:true,
 			showQuery:false,
 			indexes:{},
 			buffer:[],
@@ -53,15 +65,15 @@ export default {
 		}
 	},
 	watch:{
-		people:{
-			handler(people){
-				if(people.ready){
-					if(people.fullCount !== false && people.fullCount !== this.fullCount){
-						this.fullCount = people.fullCount
-						this.buffer = new Array(people.fullCount)
+		items:{
+			handler(items){
+				if(items.ready){
+					if(items.fullCount !== false && items.fullCount !== this.fullCount){
+						this.fullCount = items.fullCount
+						this.buffer = new Array(items.fullCount)
 					}
-					for(let i = 0; i <= this.indexes.end - this.indexes.start && i < people.data.length; i++){
-						this.buffer.splice(i + this.indexes.start, 1, people.data[i])
+					for(let i = 0; i <= this.indexes.end - this.indexes.start && i < items.data.length; i++){
+						this.buffer.splice(i + this.indexes.start, 1, items.data[i])
 					}
 				}
 			},deep:true
@@ -86,38 +98,47 @@ export default {
 			}
 		},
 		changeSort(key){
-			let field = this.fields[key]
-			if(field.sort === null){
-				_.each(this.fields, field => field.sort !== undefined ? field.sort = null : '')
-				field.sort = 1
-			} else if(typeof field.sort == 'number'){
+			let field = this.savedFields[key]
+			if(_.isNumber(field.sort)){
 				field.sort = 0 - field.sort
+			} else if(field.sort !== false){
+				_.each(this.savedFields, sibling => {
+					if(sibling.sort !== false)
+						sibling.sort = null
+				})
+				Vue.set(field, 'sort', 1)
 			}
+			console.log(_.clone(this.savedFields))
 		}
 	},
 	grapher:{
-		people(){
+		items(){
 			let fields = {}
 			let sort = {}
-			_.each(this.fields, (field, key) => {
+			_.each(this.savedFields, (field, key) => {
 				fields[key] = 1
 				if(typeof field.sort == 'number')
 					sort[key] = field.sort
 			})
+			sort[this.sort2] = 1
 
-			let filters = {}
+			let $filters = {}
 			if(this.search){
-				filters.$or = []
-				_.each(this.fields, (field, key) => {
+				$filters.$or = []
+				_.each(this.savedFields, (field, key) => {
 					if(field.search)
-						filters.$or.push({[key]:{$regex:this.search, $options:'i'}})
+						$filters.$or.push({[key]:{$regex:this.search, $options:'i'}})
 				})
 			}
+			$filters.$and = _.pluck(_.where(this.savedFilters, {enabled:true}), 'filter')
+			if(_.isEmpty($filters.$and))
+				delete $filters.$and
+			console.log($filters)
 
 			return {
 				collection:this.collection,
 				query:{
-					$filters:filters,
+					$filters,
 					$options:{
 						sort:sort,
 						skip:this.indexes.start,

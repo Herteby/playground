@@ -8,7 +8,7 @@
 		</nav>
 	</header>
 	<main>
-		<infinite v-if="page == 'infinite'" :fields="fields" :renderers="{default:'person'}" :collection="$global.People"></infinite>
+		<virtual-table v-if="page == 'infinite'" :fields="fields" :filters="filters" :renderers="{default:'person'}" :collection="$global.People"></virtual-table>
 		<test v-else></test>
 	</main>
 </div>
@@ -21,24 +21,30 @@ export default {
 			page:'infinite',
 			fields:{
 				number:{
-					name:'#'
+					display:'#',
+					sort:false
 				},
 				name:{
-					name:'Name',
+					display:'Name',
 					sort:1,
 					search:true
 				},
 				job:{
-					name:'Position',
-					sort:null,
+					display:'Position',
 					search:true
 				},
 				city:{
-					name:'City',
-					sort:null,
+					display:'City',
 					search:true
 				}
-			}
+			},
+			filters:[
+				{
+					display:'Only show developers',
+					filter:{job:{$regex:'developer',$options:'i'}},
+					enabled:false
+				}
+			]
 		}
 	}
 }
