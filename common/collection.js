@@ -53,7 +53,7 @@ Meteor.methods({
 			if(person.emoji){
 				People.update(person._id,{$unset:{emoji:true}})
 			} else if(n < emojis.length) {
-				People.update(person._id,{$set:{emojis[n]}})
+				People.update(person._id, {$set:{emoji:Emojis[n]}})
 			}
 		}
 	}
