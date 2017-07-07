@@ -1,12 +1,12 @@
 <template>
 <div>
 	<div class="controls">
+		<div v-if="!single">Limit: <input type="number" v-model.number="limit" min="1" max="99"></div>
 		<label><input type="checkbox" v-model="link">Link</label>
 		<label><input type="checkbox" v-model="subscribe">Subscribe</label>
 		<label><input type="checkbox" v-model="selected">Only selected</label>
 		<label><input type="checkbox" v-model="onlyRound">Only rounded</label>
 		<label><input type="checkbox" v-model="single">Single result</label>
-		<div v-if="!single">Limit: <input type="number" v-model.number="limit" min="1" max="99"></div>
 		<input type="text" v-model="search" placeholder="Search" style="width:100px">
 		<button @click="search = ''">Clear</button>
 		<button @click="search = '[a-f][0-9][0-9]'">Reddish</button>

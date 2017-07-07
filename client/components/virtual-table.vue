@@ -8,15 +8,22 @@
 		<input class="search" v-if="showSearch" v-model="search" placeholder="Search">
 		<label class="filter" v-for="filter in savedFilters"><input type="checkbox" v-model="filter.enabled">{{filter.display}}</label>
 		<div class="count">Results: {{typeof fullCount == 'number' ? fullCount.toLocaleString() : fullCount}}</div>
-		<div class="fields">
-			<div v-for="field, key in savedFields" v-if="field.display" :key="key" :class="{sortable:field.sort !== false}" @click="changeSort(key)">
+		<div class="fields" ref="fields">
+			<div
+				v-for="field, key, n in savedFields"
+				v-if="field.display"
+				:key="key"
+				:class="{sortable:field.sort !== false}"
+				@click="changeSort(key)"
+				:style="{width:$get(row,n) + 'px'}"
+			>
 				{{field.display}}
 				<span v-if="field.sort === 1">▼</span>
 				<span v-else-if="field.sort === -1">▲</span>
 			</div>
 		</div>
 	</div>
-	<virtual-scroller v-if="items.readyOnce && items.count" pageMode contentTag="table" :items="buffer" :renderers="renderers" :keyField="false" itemHeight="40" @update="update"></virtual-scroller>
+	<virtual-scroller v-if="items.readyOnce && items.count" pageMode contentTag="table" :items="buffer" :renderers="renderers" :keyField="false" itemHeight="40" @update="update" ref="scroller"></virtual-scroller>
 	<h1 v-else-if="items.ready">No results for "{{search}}"</h1>
 	<h1 v-else>Loading...</h1>
 </div>
@@ -65,7 +72,8 @@ export default {
 			},
 			buffer:[],
 			search:'',
-			fullCount:undefined
+			fullCount:undefined,
+			row:undefined
 		}
 	},
 	watch:{
@@ -95,7 +103,14 @@ export default {
 			if(this.indexes.start !== indexes.start || this.indexes.end !== indexes.end){
 				this.indexes = indexes
 			}
-		},500),
+			this.$refs.scroller.updateVisibleItems()
+			
+			//field widths
+			let row = get(this.$el.getElementsByTagName('tr'),'0.children')
+			this.row = _.pluck(row,'offsetWidth')
+			console.log(this.row)
+
+		},250),
 		changeSort(key){
 			let field = this.savedFields[key]
 			if(_.isNumber(field.sort)){
@@ -109,16 +124,17 @@ export default {
 			}
 			console.log(_.clone(this.savedFields))
 		},
-		match(string){
-			if(this.search){
-				return string.replace(new RegExp(this.search,'ig'), '<span class="match">$&</span>')
-			} else {
-				return string
-			}
-		}
 	},
 	provide(){
-		return {match:this.match}
+		return {
+			match:(string) => {
+				if(this.search){
+					return string.replace(new RegExp(this.search,'ig'), '<span class="match">$&</span>')
+				} else {
+					return string
+				}
+			}
+		}
 	},
 	grapher:{
 		items(){
@@ -142,7 +158,6 @@ export default {
 			$filters.$and = _.pluck(_.where(this.savedFilters, {enabled:true}), 'filter')
 			if(_.isEmpty($filters.$and))
 				delete $filters.$and
-			console.log($filters)
 
 			return {
 				collection:this.collection,

@@ -1,5 +1,5 @@
 # Meteor + Grapher + Vue
-This is my testing project and demo for [grapher-vue](https://github.com/Herteby/grapher-vue).
+This is my demo and testing project for [grapher-vue](https://github.com/Herteby/grapher-vue).
 
 It's got a pretty neat infinite scroll feature, combining grapher-vue with Akryum's [vue-virtual-scroller](https://github.com/Akryum/vue-virtual-scroller)
 
@@ -7,7 +7,6 @@ It's got a pretty neat infinite scroll feature, combining grapher-vue with Akryu
 ```
 git clone https://github.com/Herteby/testing.git
 cd testing
-npm install
+meteor npm install
 meteor
 ```
-[If you don't have Meteor](https://www.meteor.com/install)

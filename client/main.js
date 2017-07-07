@@ -10,6 +10,7 @@ Vue.use(GrapherVue)
 
 //Set up convenient globals
 get = function(obj, key) {
+	key = String(key)
 	return key.split(".").reduce(function(parent, child) {
 		if(parent === undefined || parent === null){
 			return parent
