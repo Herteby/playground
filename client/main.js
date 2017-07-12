@@ -10,12 +10,17 @@ Vue.use(GrapherVue)
 
 //Set up convenient globals
 get = function(obj, key) {
-	key = String(key)
-	return key.split(".").reduce(function(parent, child) {
+	if(arguments.length == 1){
+		key = obj
+		obj = this
+	}
+	return String(key).split(".").reduce(function(parent, child) {
 		if(parent === undefined || parent === null){
-			return parent
+			return ''
 		} else if (typeof parent === "function"){
 			return parent()[child]
+		} else if (typeof parent[child] === "function"){
+			return parent[child]()
 		} else {
 			return parent[child]
 		}
