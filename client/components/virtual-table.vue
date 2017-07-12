@@ -149,7 +149,7 @@
 			},
 			match(string){
 				if(this.search){
-					return string.replace(new RegExp(this.search,'ig'), '<span class="match">$&</span>')
+					return string.replace(new RegExp(this.search,'ig'), '<mark>$&</mark>')
 				} else {
 					return string
 				}
