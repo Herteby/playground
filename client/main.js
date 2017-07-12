@@ -24,7 +24,6 @@ get = function(obj, key) {
 set = Vue.set
 _.extend(Vue.prototype, {
 	$global:global,
-	$set:set,
 	$get:get,
 	_,
 	Meteor

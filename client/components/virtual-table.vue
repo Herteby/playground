@@ -1,32 +1,50 @@
 <template>
-<div>
-	<div :class="'notifications'">
-		<div v-if="!items.ready" class="loading">Loading...</div>
-		<div class="subscribeCount">Subscribing to {{indexes.end - indexes.start}} items</div>
-	</div>
-	<div class="tableHead">
-		<input class="search" v-if="showSearch" v-model="search" placeholder="Search">
-		<label class="filter" v-for="filter in savedFilters"><input type="checkbox" v-model="filter.enabled">{{filter.display}}</label>
-		<div class="count">Results: {{typeof fullCount == 'number' ? fullCount.toLocaleString() : fullCount}}</div>
-		<div class="fields" ref="fields">
-			<div
-				v-for="field, key, n in savedFields"
-				v-if="field.display"
-				:key="key"
-				:class="{sortable:field.sort !== false}"
-				@click="changeSort(key)"
-				:style="{width:$get(row,n) + 'px'}"
-			>
-				{{field.display}}
-				<span v-if="field.sort === 1">▼</span>
-				<span v-else-if="field.sort === -1">▲</span>
+	<div>
+		<div :class="'notifications'">
+			<div v-if="!items.ready" class="loading">Loading...</div>
+			<div class="subscribeCount">Subscribing to {{indexes.end - indexes.start}} items</div>
+		</div>
+		<div class="tableHead">
+			<input class="search" v-if="showSearch" v-model="search" placeholder="Search">
+			<label class="filter" v-for="filter in savedFilters"><input type="checkbox" v-model="filter.enabled">{{filter.display}}</label>
+			<div class="count">Results: {{typeof fullCount == 'number' ? fullCount.toLocaleString() : fullCount}}</div>
+			<div class="fields" ref="fields">
+				<div
+					v-for="field, key, n in savedFields"
+					v-if="field.display"
+					:key="key"
+					:class="{sortable:field.sort !== false}"
+					@click="changeSort(key)"
+					:style="{width:$get(row,n) + 'px'}"
+				>
+					{{field.display}}
+					<span v-if="field.sort === 1">▼</span>
+					<span v-else-if="field.sort === -1">▲</span>
+				</div>
 			</div>
 		</div>
+		<virtual-scroller
+			v-if="items.readyOnce && items.count"
+			pageMode
+			contentTag="table"
+			:items="buffer"
+			:keyField="false"
+			itemHeight="40"
+			@update="update"
+			ref="scroller"
+		>
+			<template scope="props">
+				<tr :class="{item:true, odd:props.itemIndex % 2, ready:!!props.item}" @click="click(props.item)">
+					<template v-for="field, key in savedFields">
+						<component v-if="field.component" :is="field.component" :item="props.item" :index="props.itemIndex"></component>
+						<td v-else v-html="field.search ? match(props.item[key]) : props.item[key]"></td>
+					</template>
+				</tr>
+			</template>
+		</virtual-scroller>
+		<h1 v-else-if="items.ready">No results<template v-if="search"> for "{{search}}"</template></h1>
+		<h1 v-else>Loading...</h1>
 	</div>
-	<virtual-scroller v-if="items.readyOnce && items.count" pageMode contentTag="table" :items="buffer" :renderers="renderers" :keyField="false" itemHeight="40" @update="update" ref="scroller"></virtual-scroller>
-	<h1 v-else-if="items.ready">No results for "{{search}}"</h1>
-	<h1 v-else>Loading...</h1>
-</div>
 </template>
 
 <script>
@@ -58,6 +76,9 @@ export default {
 		minimum:{
 			type:Number,
 			default:40
+		},
+		click:{
+			type:Function
 		}
 	},
 	data(){
@@ -108,8 +129,6 @@ export default {
 			//field widths
 			let row = get(this.$el.getElementsByTagName('tr'),'0.children')
 			this.row = _.pluck(row,'offsetWidth')
-			console.log(this.row)
-
 		},250),
 		changeSort(key){
 			let field = this.savedFields[key]
@@ -124,16 +143,17 @@ export default {
 			}
 			console.log(_.clone(this.savedFields))
 		},
+		match(string){
+			if(this.search){
+				return string.replace(new RegExp(this.search,'ig'), '<span class="match">$&</span>')
+			} else {
+				return string
+			}
+		}
 	},
 	provide(){
 		return {
-			match:(string) => {
-				if(this.search){
-					return string.replace(new RegExp(this.search,'ig'), '<span class="match">$&</span>')
-				} else {
-					return string
-				}
-			}
+			match:this.match			
 		}
 	},
 	grapher:{

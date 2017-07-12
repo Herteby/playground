@@ -1,5 +1,8 @@
 {
-	"extends": "eslint:recommended",
+	"extends": [
+		"eslint:recommended",
+		"plugin:vue/recommended"
+	],
 	"parserOptions": {
 		"ecmaVersion": 6,
 		"sourceType": "module",
@@ -17,6 +20,7 @@
 			"warn",
 			"never"
 		],
+		"vue/no-invalid-v-if": "error",
 		"no-empty":"off",
 		"no-undef": "off",
 		"no-unused-vars": "off",

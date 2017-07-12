@@ -5,7 +5,7 @@ vueBlue = #345
 	flex-wrap wrap
 header
 	display block
-	background linear-gradient(135deg, vueBlue 0%, vueBlue 50%, vueGreen 50%, vueGreen 100%)
+	background linear-gradient(135deg, vueBlue 50%, vueGreen 50%)
 	padding 20px 20px 0 20px
 	.logo
 		color white
@@ -76,7 +76,6 @@ main
 		cursor pointer
 		overflow hidden
 		white-space nowrap
-		max-width 100px
 		text-align center
 		transition background 1s, border-radius 2s, transform 0.2s, opacity 0.2s
 pre
@@ -121,7 +120,10 @@ pre
 		&.odd
 			background #eee
 		&:hover
-			background alpha(vueGreen,50%)
+			background tint(vueGreen,60%)
+	img
+		border-radius 50%
+		height 40px
 	td
 		padding 0 10px
 		&.ready

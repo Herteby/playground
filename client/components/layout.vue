@@ -8,13 +8,48 @@
 		</div class="menu">
 	</header>
 	<main>
-		<virtual-table v-if="page == 'infinite'" :fields="fields" :filters="filters" :renderers="{default:'person'}" :collection="$global.People"></virtual-table>
+		<virtual-table
+			v-if="page == 'infinite'"
+			:fields="fields"
+			:filters="filters"
+			:renderers="{default:'person'}"
+			:collection="$global.People"
+			:click="click"
+		></virtual-table>
 		<test v-else></test>
 	</main>
 </div>
 </template>
 
 <script>
+let fields = {
+	number:{
+		display:'#',
+		sort:false
+	},
+	name:{
+		display:'Name',
+		sort:1,
+		search:true
+	},
+	job:{
+		display:'Position',
+		search:true
+	},
+	city:{
+		display:'City',
+		search:true
+	},
+	'profile.name':{
+		display:'Name',
+		search:true
+	},
+	'extra.stuff':{
+		display:'Extra',
+		search:true,
+		post:true
+	}
+}
 export default {
 	data(){
 		return {
@@ -22,7 +57,8 @@ export default {
 			fields:{
 				number:{
 					display:'#',
-					sort:false
+					sort:false,
+					component:'number'
 				},
 				name:{
 					display:'Name',
@@ -36,8 +72,10 @@ export default {
 				city:{
 					display:'City',
 					search:true
-				},
-				emoji:{}
+				}
+			},
+			include:{
+				emoji:1
 			},
 			filters:[
 				{
@@ -50,7 +88,12 @@ export default {
 					filter:{emoji:{$exists:true}},
 					enabled:false
 				}
-			]
+			],
+			click(item){
+				console.log(item)
+				if(item)
+					Meteor.call('emojify', item._id, randInt(0,Emojis.length - 1))
+			}
 		}
 	}
 }

@@ -4,6 +4,7 @@ export default {
 		Vue.mixin({
 			beforeCreate(){
 				this._grapher = {}
+				let args = typeof this.$options.grapher == 'function' ? this.$options.grapher() : this.$options.grapher
 				_.each(this.$options.grapher, (fn, name) => {
 					Vue.util.defineReactive(this, name, { //Initial "dummy result"
 						ready:false,

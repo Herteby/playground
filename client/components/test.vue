@@ -19,7 +19,7 @@
 		<span v-if="onlyRound && !link">(Link must be turned on to get corners)</span>
 	</h1>
 	<div class="list" v-else-if="!single">
-		<color v-for="item in stuff.data" :item="item" :key="item._id"/>
+		<color v-for="item in stuff.data" :item="item" :key="item._id"></color>
 	</div>
 	<div v-else class="list">
 		<color :item="stuff.data"/>
@@ -55,7 +55,7 @@ export default {
 					selected:1
 				}
 			}
-			//this may seem like a lot of pointless code. I'm just doing it like this to make the json display look cleaner
+			//This is alot of unnecessary code. I'm just doing it like this to make the json display look cleaner
 			if(!this.subscribe)
 				args.subscribe = false
 			if(this.single)
