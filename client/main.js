@@ -8,7 +8,11 @@ Vue.config.meteor.freeze = true
 import GrapherVue from 'meteor/herteby:grapher-vue'
 Vue.use(GrapherVue)
 
+import lodash from 'lodash'
+_ = lodash
+
 //Set up convenient globals
+
 get = function(obj, key) {
 	if(arguments.length == 1){
 		key = obj
@@ -26,7 +30,9 @@ get = function(obj, key) {
 		}
 	}, obj)
 }
+
 set = Vue.set
+
 _.extend(Vue.prototype, {
 	$global:global,
 	$get:get,

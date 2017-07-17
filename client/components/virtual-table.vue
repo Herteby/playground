@@ -34,10 +34,9 @@
 			ref="scroller"
 		>
 			<template scope="props">
-				<tr :class="{item:true, odd:props.itemIndex % 2, ready:!!props.item}" @click="click(props.item)">
+				<tr :class="{item:true, odd:props.itemIndex % 2, ready:!!props.item}" @click="$emit('click',props.item)">
 					<template v-for="field, key in savedFields">
-						<component v-if="field.component" :is="field.component" :item="props.item" :index="props.itemIndex"></component>
-						<slot v-else-if="$scopedSlots[key]" :name="key" :item="props.item" :index="props.itemIndex" :match="match"></slot>
+						<slot v-if="$scopedSlots[key]" :name="key" :item="props.item" :index="props.itemIndex" :match="match"></slot>
 						<td v-else v-html="match($get(props, 'item.' + key))"></td>
 					</template>
 				</tr>
@@ -51,39 +50,14 @@
 <script>
 	export default {
 		props:{
-			collection:{
-				type:Mongo.Collection,
-				required: true
-			},
-			fields:{
-				type:Object,
-				required:true,
-			},
-			include:{
-				type:Object,
-				default:{}
-			},
-			filters:{
-				type:Array
-			},
-			renderers:{
-				type:Object
-			},
-			showSearch:{
-				type:Boolean,
-				default:true
-			},
-			sort2:{
-				type:String,
-				default:'_id'
-			},
-			minimum:{
-				type:Number,
-				default:30
-			},
-			click:{
-				type:Function
-			}
+			collection:{type:Mongo.Collection, required: true},
+			fields:{type:Object, required:true},
+			baseQuery:{type:Object, default:{}},
+			filters:{type:Array},
+			showSearch:{type:Boolean, default:true},
+			sort2:{type:String, default:'_id'},
+			minimum:{type:Number, default:30},
+			regexPrefix:{type:String, default:'([^a-zA-Z]|^)'}
 		},
 		data(){
 			return {
@@ -113,7 +87,7 @@
 							set(this.buffer, i + this.indexes.start, items.data[i])
 						}
 					}
-				},deep:true
+				}, deep:true
 			}
 		},
 		methods:{
@@ -131,9 +105,9 @@
 				this.$refs.scroller.updateVisibleItems()
 				
 				//field widths
-				let row = get(this.$el.getElementsByTagName('tr'),'0.children')
-				this.row = _.pluck(row,'offsetWidth')
-			},250),
+				let row = get(this.$el.getElementsByTagName('tr'), '0.children')
+				this.row = _.map(row, 'offsetWidth')
+			}, 250),
 			changeSort(key){
 				let field = this.savedFields[key]
 				if(_.isNumber(field.sort)){
@@ -145,11 +119,10 @@
 					})
 					set(field, 'sort', 1)
 				}
-				console.log(_.clone(this.savedFields))
 			},
 			match(string){
 				if(this.search){
-					return string.replace(new RegExp(this.search,'ig'), '<mark>$&</mark>')
+					return string.replace(new RegExp(this.regexPrefix + this.search, 'ig'), '<mark>$&</mark>')
 				} else {
 					return string
 				}
@@ -162,39 +135,38 @@
 		},
 		grapher:{
 			items(){
-				let fields = {}
-				let sort = {}
-				_.each(this.savedFields, (field, key) => {
-					fields[key] = 1
-					if(typeof field.sort == 'number')
-						sort[key] = field.sort
-				})
-				sort[this.sort2] = 1
-				_.extend(fields,this.include)
+				let query = _.cloneDeep(this.baseQuery)
 
-				let $filters = {}
+				query.$options = {
+					sort:{},
+					skip:this.indexes.start,
+					limit:this.indexes.end ? this.indexes.end - this.indexes.start : 1
+				}
+				//go through the fields and add them to the query
+				_.each(this.savedFields, (field, key) => {
+					_.set(query, key, 1)
+					if(typeof field.sort == 'number')
+						query.$options.sort[key] = field.sort
+				})
+				query.$options.sort[this.sort2] = 1
+
+				query.$filters = query.$filters || {}
+				//text search
 				if(this.search){
-					$filters.$or = []
+					query.$filters.$or = query.$filters.$or || []
 					_.each(this.savedFields, (field, key) => {
 						if(field.search)
-							$filters.$or.push({[key]:{$regex:this.search, $options:'i'}})
+							query.$filters.$or.push({[key]:{$regex:this.regexPrefix + this.search, $options:'i'}})
 					})
 				}
-				$filters.$and = _.pluck(_.where(this.savedFilters, {enabled:true}), 'filter')
-				if(_.isEmpty($filters.$and))
-					delete $filters.$and
+				//toggleable filters
+				let filters = _.map(_.filter(this.savedFilters, {enabled:true}), 'filter')
+				if(!_.isEmpty(filters))
+					query.$filters.$and = filters
 
 				return {
 					collection:this.collection,
-					query:{
-						$filters,
-						$options:{
-							sort:sort,
-							skip:this.indexes.start,
-							limit:this.indexes.end ? this.indexes.end - this.indexes.start : 1
-						},
-						...fields
-					},
+					query:query,
 					fullCount:true
 				}
 			}

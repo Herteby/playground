@@ -20,10 +20,15 @@
 			"warn",
 			"never"
 		],
-		"vue/no-invalid-v-if": "error",
+		"comma-spacing":"warn",
+		"no-extra-parens":"warn",
+		"block-scoped-var":"warn",
+		"yoda":"warn",
+		"no-mixed-spaces-and-tabs":"warn",
 		"no-empty":"off",
 		"no-undef": "off",
 		"no-unused-vars": "off",
-		"no-console": "off"
+		"no-console": "off",
+		"no-throw-literal":"error"
 	}
 }

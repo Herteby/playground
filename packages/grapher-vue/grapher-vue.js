@@ -53,7 +53,7 @@ export default {
 									query.unsubscribe()
 								}
 								this[name].ready = false 
-								query.fetch((err,data) => {
+								query.fetch((err, data) => {
 									if(err){
 										console.err(err)
 									} else {
@@ -118,7 +118,7 @@ export default {
 									this.$set(this[name], 'fullCount', count)
 								})
 							}
-						},{immediate:true})
+						}, {immediate:true})
 						if(nonreactive){
 							unwatch() //stop the watcher after the first run if the user specified reactive:false
 						}

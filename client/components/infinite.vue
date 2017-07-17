@@ -1,5 +1,5 @@
 <template>
-	<virtual-table :fields="fields" :include="include" :filters="filters" :collection="$global.People" :click="click">
+	<virtual-table :fields="fields" :baseQuery="baseQuery" :filters="filters" :collection="$global.People" @click="emojify">
 		<template slot="name" scope="props">
 			<td><span v-html="props.match($get(props,'item.name'))"></span> <div class="emoji">{{$get(props,'item.emoji')}}</div></td>
 		</template>
@@ -61,13 +61,13 @@
 						search:true
 					}
 				},
-				include:{
+				baseQuery:{
 					emoji:1
 				},
 				filters:[
 					{
 						display:'Only developers',
-						filter:{job:{$regex:'developer',$options:'i'}},
+						filter:{job:{$regex:'developer', $options:'i'}},
 						enabled:false
 					},
 					{
@@ -76,10 +76,10 @@
 						enabled:false
 					}
 				],
-				click(item){
+				emojify(item){
 					console.log(item)
 					if(item)
-						Meteor.call('emojify', item._id, randInt(0,Emojis.length - 1))
+						Meteor.call('emojify', item._id, randInt(0, Emojis.length - 1))
 				}
 			}
 		}
