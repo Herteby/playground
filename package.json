@@ -9,6 +9,7 @@
     "core-js": "^2.4.1",
     "faker": "^4.1.0",
     "intersection-observer": "^0.2.1",
+    "lodash": "^4.17.4",
     "meteor-node-stubs": "~0.2.4",
     "underscore.deepclone": "^0.1.2",
     "vue": "^2.3.0",
